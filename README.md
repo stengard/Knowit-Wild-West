@@ -8,15 +8,21 @@ This demo was made for HoloLense using Unity and [HoloToolkit-Unity](https://git
 
 ### Prerequisites
 
-1. HoloLense or [HoloLense Emulator](https://developer.microsoft.com/sv-se/windows/holographic/install_the_tools "HoloLense Emulator")
+1. [HoloLense](https://www.microsoft.com/microsoft-hololens/en-us "HoloLense") or [HoloLense Emulator](https://developer.microsoft.com/sv-se/windows/holographic/install_the_tools "HoloLense Emulator")
 2. [Unity HoloLense Technical Preview](https://unity3d.com/partners/microsoft/hololens "Unity HoloLense Technical Preview")
 3. Visual Studio 2015
 
 ### Installing
 
+1. If using a HoloLense, install the drivers etc. Otherwise install the Emulator.
+2. install Unity HoloLense Technical Preview.
+
 Open the project in Unity. You can use unitys Game mode or export to Visual Studio and build to the HoloLense or HoloLense Emulator.
 
 #### Export the project from Unity to Visual Studio
+
+Follow these steps and you should be ready to go
+
 1. In Unity select File > Build Settings.
 2. Select Windows Store in the Platform list and click Switch Platform.
 3. Set SDK to Universal 10 and Build Type to D3D.
@@ -37,9 +43,32 @@ Open the project in Unity. You can use unitys Game mode or export to Visual Stud
     * Click Debug -> Start Without debugging or press Ctrl + F5.
     * After some time the emulator will start with the Origami project. When first launching the emulator, it can take as long as 15 minutes for the emulator to start up. Once it starts, do not close it.
 
+
+
+## Using the app
+
+Following information states which gestures are available and what can be done in the application.
+
+### Gestures
+
+#### Action
+
+The initialize an action on an object the tap gesture is used.
+
 ```
-Give the example
+Example: To set the timer on the TNT. First look at it and then make the tap gesture with your fingers.
 ```
+
+#### Move Objects
+
+To move an object the hold gesture is used.
+```
+Example: To move the radio to another place, first look at it and then make the tap and hold gesture with your fingers. Then you can move it around with your gaze; where you look is where the object is placed.
+```
+
+### Voice Commands
+
+
 
 ## Built With
 
