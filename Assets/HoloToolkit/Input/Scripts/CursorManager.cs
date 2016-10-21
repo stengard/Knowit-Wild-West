@@ -22,13 +22,15 @@ public partial class CursorManager : Singleton<CursorManager>
     [Tooltip("Distance, in meters, to offset the cursor from the collision point.")]
     public float DistanceFromCollision = 0.01f;
 
+    private bool _hasHitTarget;
+
     void Awake()
     {
         if (CursorOnHolograms == null || CursorOffHolograms == null)
         {
             return;
         }
-
+        _hasHitTarget = false;
         // Hide the Cursors to begin with.
         CursorOnHolograms.SetActive(false);
         CursorOffHolograms.SetActive(false);
@@ -43,11 +45,13 @@ public partial class CursorManager : Singleton<CursorManager>
 
         if (GazeManager.Instance.Hit)
         {
+            _hasHitTarget = true;
             CursorOnHolograms.SetActive(true);
             CursorOffHolograms.SetActive(false);
         }
         else
         {
+            _hasHitTarget = false;
             CursorOffHolograms.SetActive(true);
             CursorOnHolograms.SetActive(false);
         }
@@ -56,6 +60,16 @@ public partial class CursorManager : Singleton<CursorManager>
         this.gameObject.transform.position = GazeManager.Instance.Position + GazeManager.Instance.Normal * DistanceFromCollision;
 
         // Orient the cursor to match the surface being gazed at.
-        gameObject.transform.up = GazeManager.Instance.Normal;
+
+        if (_hasHitTarget)
+        {
+            gameObject.transform.up = GazeManager.Instance.Normal;
+
+        }
+        else
+        {
+            gameObject.transform.rotation = Quaternion.LookRotation(-Camera.main.transform.forward, Camera.main.transform.up);
+
+        }
     }
 }
