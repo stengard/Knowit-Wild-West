@@ -1,14 +1,30 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
-
+Project("{AFE5CE94-CDDA-B0A9-15EE-9DFCADE30A89}") = "Knowit Wild West", "Assembly-CSharp-firstpass.csproj", "{7C492C4C-6D31-46B8-38CC-CDD61EA9A9F9}"
+EndProject
+Project("{AFE5CE94-CDDA-B0A9-15EE-9DFCADE30A89}") = "Knowit Wild West", "Assembly-CSharp.csproj", "{E1789EC9-8F90-0FB0-394B-21E46D69A727}"
+EndProject
+Project("{AFE5CE94-CDDA-B0A9-15EE-9DFCADE30A89}") = "Knowit Wild West", "Assembly-CSharp-Editor.csproj", "{C7415A41-693D-CA7A-3953-89E0571C0ABE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-
+		{7C492C4C-6D31-46B8-38CC-CDD61EA9A9F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C492C4C-6D31-46B8-38CC-CDD61EA9A9F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C492C4C-6D31-46B8-38CC-CDD61EA9A9F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C492C4C-6D31-46B8-38CC-CDD61EA9A9F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1789EC9-8F90-0FB0-394B-21E46D69A727}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1789EC9-8F90-0FB0-394B-21E46D69A727}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1789EC9-8F90-0FB0-394B-21E46D69A727}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1789EC9-8F90-0FB0-394B-21E46D69A727}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7415A41-693D-CA7A-3953-89E0571C0ABE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7415A41-693D-CA7A-3953-89E0571C0ABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7415A41-693D-CA7A-3953-89E0571C0ABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7415A41-693D-CA7A-3953-89E0571C0ABE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
