@@ -3,9 +3,10 @@
 This demo was made for HoloLense using Unity and [HoloToolkit-Unity](https://github.com/Microsoft/HoloToolkit-Unity "HoloToolkit-Unity"). It is a demo using spatial mapping to place objects in the world, spatial audio and hand gestures and voice commands to interact with the objects.
 
 ## Getting Started
-
-1. Clone the repo: `git clone git@github.com:stengard/Knowit-Wild-West.git`  
-
+First, clone the repo.
+```
+git clone https://github.com/stengard/Knowit-Wild-West.git
+```
 ### Prerequisites
 
 1. [HoloLense](https://www.microsoft.com/microsoft-hololens/en-us "HoloLense") or [HoloLense Emulator](https://developer.microsoft.com/sv-se/windows/holographic/install_the_tools "HoloLense Emulator")
@@ -14,7 +15,7 @@ This demo was made for HoloLense using Unity and [HoloToolkit-Unity](https://git
 
 ### Installing
 
-1. If using a HoloLense, install the drivers etc. Otherwise install the Emulator.
+1. If you're using a HoloLense, install the drivers etc. Otherwise install the Emulator.
 2. install Unity HoloLense Technical Preview.
 
 Open the project in Unity. You can use unitys Game mode or export to Visual Studio and build to the HoloLense or HoloLense Emulator.
@@ -77,7 +78,6 @@ Example: To move the radio to another place, first look at it and then make the 
 ## Authors
 
 * **Martin Stengård** - *Coding, design, etc.*
-* **Hanne Nielsén** - *Project Leading*
 
 ## License
 

@@ -207,9 +207,9 @@ GameObject:
   - 4: {fileID: 4000012284654298}
   - 65: {fileID: 65000011680751762}
   - 114: {fileID: 114000013609472378}
-  - 114: {fileID: 114000012095800610}
   - 82: {fileID: 82000012334901602}
   - 23: {fileID: 23000013496395002}
+  - 114: {fileID: 114000013782701528}
   m_Layer: 0
   m_Name: TNT Explosion
   m_TagString: Untagged
@@ -321,7 +321,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012692160978}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.914, y: 0.01, z: 1}
+  m_LocalPosition: {x: 3.35, y: -0.75, z: 1.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_Children:
@@ -1024,17 +1024,6 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4283891507
---- !u!114 &114000012095800610
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012692160978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7323256dc3c7b9347975b625ecdf5edd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114000013609472378
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1051,10 +1040,25 @@ MonoBehaviour:
   ExplosionSound: {fileID: 8300000, guid: 36895597d859f3e43b9f4df1162f61c9, type: 3}
   TimerTickBeepSound: {fileID: 8300000, guid: de0f9145ddf37d74597c06c196965e9d, type: 3}
   ExplodeOnGaze: 0
-  ExplodeOnTap: 1
+  ExplodeOnTap: 0
   ExplodeOnKeyword:
   - Blow Up
   Timer: {fileID: 102000010454391374}
   Debris:
   - {fileID: 1000010330104820, guid: 924db493fb5346f40b3dd00675512005, type: 2}
   NumberOfDebris: 5
+  SecondsToExplode: 1
+  ExplosionRadius: 100
+  ExplosionForceNewton: 400
+--- !u!114 &114000013782701528
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012692160978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbad991a9894486418e4988222483ef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SavedAnchorFriendlyName: TNTAnchor1

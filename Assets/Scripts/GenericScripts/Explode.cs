@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using HoloToolkit.Unity;
 using UnityEngine;
 using UnityEngine.Windows.Speech;
 using Random = UnityEngine.Random;
 
-namespace Assets
+namespace Assets.Scripts.GenericScripts
 {
     [RequireComponent(typeof(AudioSource))]
     [RequireComponent(typeof(Collider))]
@@ -21,9 +22,12 @@ namespace Assets
         public TextMesh Timer;
         public List<GameObject> Debris;
         public int NumberOfDebris;
+        public float SecondsToExplode;
+        public float ExplosionRadius;
+        public float ExplosionForceNewton;
+
 
         private string _formattedTimeLeft;
-        private float _timer;
         private int _hoursLeft;
         private int _minutesLeft;
         private int _secondsLeft;
@@ -34,32 +38,18 @@ namespace Assets
         private bool _hasBeenExploded;
         private GameObject _explotion;
         private KeywordRecognizer _keywordRecognizer;
-        private Dictionary<string, KeywordAction> _keywordCollection;
         private List<GameObject> _debris;
 
 
-        delegate void KeywordAction(PhraseRecognizedEventArgs args);
-
         void Start()
         {
-            _timer = 10f;
             _debris = new List<GameObject>();
-            SetTimer(_timer);
+            Timer.text = SetTimer(SecondsToExplode);
             _hasBeenExploded = false;
-            _keywordCollection = new Dictionary<string, KeywordAction>();
-            foreach (string keyWord in ExplodeOnKeyword)
-            {
-                _keywordCollection.Add(keyWord, OnKeywordRecognized);
-            }
             _audio = GetComponent<AudioSource>();
             _audio.clip = TimerTickBeepSound;
             _hasBeenPlayed = false;
             _explotion = (GameObject)Instantiate(Explotion, gameObject.transform.position, Quaternion.identity);
-
-            //foreach (GameObject d in Debris)
-            //{
-            //    _debris.Add((GameObject)Instantiate(d, gameObject.transform.position, Quaternion.identity));
-            //}
 
         }
 
@@ -68,15 +58,14 @@ namespace Assets
             //If the tomer has not yet been started, we don't need to do anything
             if (!_timerHasStarted) return;
 
-            _timer -= Time.deltaTime;
-            SetTimer(_timer);
-            Timer.text = _formattedTimeLeft;
-            if (_timer <= 0 && !_hasBeenExploded)
-            {
-                TriggerExplotion();
-                Timer.text = "00:00:00";
-                _timer = 10;
-            }
+            SecondsToExplode -= Time.deltaTime;
+            
+            Timer.text = SetTimer(SecondsToExplode); 
+
+            if (!(SecondsToExplode <= 0) || _hasBeenExploded) return;
+            TriggerExplotion();
+            Timer.text = "00:00:00";
+            SecondsToExplode = 10;
         }
 
         // Called by GazeGestureManager when the user performs a Select gesture
@@ -93,23 +82,37 @@ namespace Assets
         {
             if (ExplodeOnTap && !_hasBeenPlayed)
             {
+
+
                 StartCoroutine(WaitAndBleep());
                 _timerHasStarted = true;
 
             }
         }
 
-        private void OnKeywordRecognized(PhraseRecognizedEventArgs args)
+        private void OnBlowUpRecognized()
         {
-            if (ExplodeOnTap && !_hasBeenPlayed)
+            Debug.Log("EXPLODERA");
+            if (ExplodeOnKeyword.Count > 0 && !_hasBeenPlayed)
             {
                 StartCoroutine(WaitAndBleep());
                 _timerHasStarted = true;
             }
         }
 
+        private void RemoveVertices(IEnumerable<GameObject> boundingObjects)
+        {
+            RemoveSurfaceVertices removeVerts = RemoveSurfaceVertices.Instance;
+            if (removeVerts != null && removeVerts.enabled)
+            {
+                removeVerts.RemoveSurfaceVerticesWithinBounds(boundingObjects);
+            }
+        }
+
         private void TriggerExplotion()
         {
+            //List<GameObject> test = new List<GameObject> { gameObject };
+            //RemoveVertices(test);
             _hasBeenExploded = true;
             StopCoroutine(WaitAndBleep());
             MakeDebrisFly();
@@ -123,29 +126,24 @@ namespace Assets
 
         private void MakeDebrisFly()
         {
-
-            //Collider[] colliders = Physics.OverlapSphere(explosionPos, radius);
-            //foreach (Collider hit in colliders)
-            //{
-            //    Rigidbody rb = hit.GetComponent<Rigidbody>();
-
-            //    if (rb != null)
-            //        rb.AddExplosionForce(power, explosionPos, radius, 3.0F);
-
-            //}
+            //Spawn Debris
             foreach (GameObject d in Debris)
             {
                 for (int i = 0; i < NumberOfDebris; i++)
                 {
-                    Debug.Log(d.gameObject.name);
                     Vector3 position = new Vector3(Random.Range(-1.0f, 1.0f), Random.Range(-1.0f, 1.0f), Random.Range(-1.0f, 1.0f));
                     _debris.Add((GameObject)Instantiate(d, gameObject.transform.position + position, Quaternion.identity));
                 }
-
             }
-            foreach (GameObject d in _debris)
+
+            Collider[] colliders = Physics.OverlapSphere(gameObject.transform.position, ExplosionRadius);
+
+            foreach (Collider c in colliders)
             {
-                d.GetComponent<Rigidbody>().AddExplosionForce(600, gameObject.transform.position, 10, 20.0f);
+                Rigidbody rb = c.GetComponent<Rigidbody>();
+                if (rb != null)
+                    rb.AddExplosionForce(ExplosionForceNewton, gameObject.transform.position, ExplosionRadius, 2.0F);
+                
             }
         }
 
@@ -173,13 +171,13 @@ namespace Assets
             }
         }
 
-        void SetTimer(float timer)
+        private string  SetTimer(float timer)
         {
             _minutesLeft = Mathf.FloorToInt(timer / 60F);
             _secondsLeft = Mathf.FloorToInt(timer - _minutesLeft * 60);
 
             _hoursLeft = 00;
-            _formattedTimeLeft = String.Format("{0:00}:{1:00}:{2:00}", _hoursLeft, _minutesLeft, _secondsLeft);
+            return String.Format("{0:00}:{1:00}:{2:00}", _hoursLeft, _minutesLeft, _secondsLeft);
         }
 
         private IEnumerator PlaySoundAndDestroy()
