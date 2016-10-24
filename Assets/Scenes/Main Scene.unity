@@ -306,6 +306,11 @@ Prefab:
       propertyPath: NumberOfDebris
       value: 21
       objectReference: {fileID: 0}
+    - target: {fileID: 114000013609472378, guid: c039508473609a44a868e336284fa44e,
+        type: 2}
+      propertyPath: ExplodeOnKeyword
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c039508473609a44a868e336284fa44e, type: 2}
   m_IsPrefabParent: 0
@@ -599,7 +604,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 7ac66c687b85ccc4daf0a19587ffddef, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 728403078}
-  m_LocalRotation: {x: 0.65328145, y: 0.65328157, z: -0.270598, w: -0.27059796}
+  m_LocalRotation: {x: 0.6532815, y: 0.6532816, z: -0.27059802, w: -0.270598}
   m_LocalPosition: {x: -0.7491291, y: 0, z: -0.7836783}
   m_LocalScale: {x: 10.000001, y: 28.999998, z: 15.000003}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1856,6 +1861,12 @@ Transform:
   - {fileID: 2130811560}
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!114 &1460032208 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000013609472378, guid: c039508473609a44a868e336284fa44e,
+    type: 2}
+  m_PrefabInternal: {fileID: 202324861}
+  m_Script: {fileID: 11500000, guid: 3e733a2df78e56a4e8360d4fe1231a3b, type: 3}
 --- !u!1 &1491472367
 GameObject:
   m_ObjectHideFlags: 0
@@ -2506,14 +2517,37 @@ MonoBehaviour:
   RecognizerStart: 0
   KeywordsAndResponses:
   - Keyword: blow up
-    NeedToLookAt: 1
-    Response: 
+    KeyCode: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1460032208}
+          m_MethodName: OnBlowUpRecognized
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
   - Keyword: pick up object
-    NeedToLookAt: 1
-    Response: 
+    KeyCode: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
   - Keyword: place object
-    NeedToLookAt: 1
-    Response: 
+    KeyCode: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
 --- !u!4 &2125757744 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000012284654298, guid: c039508473609a44a868e336284fa44e,

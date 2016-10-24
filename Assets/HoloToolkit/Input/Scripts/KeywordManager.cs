@@ -3,7 +3,6 @@
 
 using System.Collections.Generic;
 using System.Linq;
-using Assets.Scripts.GenericScripts;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Windows.Speech;
@@ -28,9 +27,9 @@ namespace HoloToolkit.Unity
             [Tooltip("The keyword to recognize.")]
             public string Keyword;
             [Tooltip("The KeyCode to recognize.")]
-            public bool NeedToLookAt;
+            public KeyCode KeyCode;
             [Tooltip("The UnityEvent to be invoked when the keyword is recognized.")]
-            public string Response;
+            public UnityEvent Response;
         }
 
         // This enumeration gives the manager two different ways to handle the recognizer. Both will
@@ -47,42 +46,64 @@ namespace HoloToolkit.Unity
         private KeywordRecognizer keywordRecognizer;
         private Dictionary<string, UnityEvent> responses;
 
-        Dictionary<string, System.Action> keywords = new Dictionary<string, System.Action>();
-
-        // Use this for initialization
-
         void Start()
         {
-            keywordRecognizer = null;
-
-            foreach (KeywordAndResponse keywordAndResponse in KeywordsAndResponses)
+            if (KeywordsAndResponses.Length > 0)
             {
-                keywords.Add(keywordAndResponse.Keyword, () =>
+                // Convert the struct array into a dictionary, with the keywords and the keys and the methods as the values.
+                // This helps easily link the keyword recognized to the UnityEvent to be invoked.
+                responses = KeywordsAndResponses.ToDictionary(keywordAndResponse => keywordAndResponse.Keyword,
+                                                              keywordAndResponse => keywordAndResponse.Response);
+
+                keywordRecognizer = new KeywordRecognizer(responses.Keys.ToArray());
+                keywordRecognizer.OnPhraseRecognized += KeywordRecognizer_OnPhraseRecognized;
+
+                if (RecognizerStart == RecognizerStartBehavior.AutoStart)
                 {
-                    var focusObject = GazeGestureManager.Instance.FocusedObject;
-                    if (focusObject != null)
-                    {
-                        // Call the OnStop method on just the focused object.
-                        focusObject.SendMessage(keywordAndResponse.Response);
-                    }
-                });
+                    keywordRecognizer.Start();
+                }
             }
+            else
+            {
+                Debug.LogError("Must have at least one keyword specified in the Inspector on " + gameObject.name + ".");
+            }
+        }
 
+        void Update()
+        {
+            ProcessKeyBindings();
+        }
 
-            // Tell the KeywordRecognizer about our keywords.
-            keywordRecognizer = new KeywordRecognizer(keywords.Keys.ToArray());
+        void OnDestroy()
+        {
+            if (keywordRecognizer != null)
+            {
+                StopKeywordRecognizer();
+                keywordRecognizer.OnPhraseRecognized -= KeywordRecognizer_OnPhraseRecognized;
+                keywordRecognizer.Dispose();
+            }
+        }
 
-            // Register a callback for the KeywordRecognizer and start recognizing!
-            keywordRecognizer.OnPhraseRecognized += KeywordRecognizer_OnPhraseRecognized;
-            keywordRecognizer.Start();
+        private void ProcessKeyBindings()
+        {
+            foreach (var kvp in KeywordsAndResponses)
+            {
+                if (Input.GetKeyDown(kvp.KeyCode))
+                {
+                    kvp.Response.Invoke();
+                    return;
+                }
+            }
         }
 
         private void KeywordRecognizer_OnPhraseRecognized(PhraseRecognizedEventArgs args)
         {
-            System.Action keywordAction;
-            if (keywords.TryGetValue(args.text, out keywordAction))
+            UnityEvent keywordResponse;
+
+            // Check to make sure the recognized keyword exists in the methods dictionary, then invoke the corresponding method.
+            if (responses.TryGetValue(args.text, out keywordResponse))
             {
-                keywordAction.Invoke();
+                keywordResponse.Invoke();
             }
         }
 

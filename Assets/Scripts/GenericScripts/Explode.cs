@@ -18,7 +18,7 @@ namespace Assets.Scripts.GenericScripts
         public AudioClip TimerTickBeepSound;
         public bool ExplodeOnGaze = false;
         public bool ExplodeOnTap = false;
-        public List<string> ExplodeOnKeyword;
+        public bool ExplodeOnKeyword = false;
         public TextMesh Timer;
         public List<GameObject> Debris;
         public int NumberOfDebris;
@@ -37,7 +37,7 @@ namespace Assets.Scripts.GenericScripts
         private bool _hasBeenPlayed;
         private bool _hasBeenExploded;
         private GameObject _explotion;
-        private KeywordRecognizer _keywordRecognizer;
+
         private List<GameObject> _debris;
 
 
@@ -90,10 +90,11 @@ namespace Assets.Scripts.GenericScripts
             }
         }
 
-        private void OnBlowUpRecognized()
+        public void OnBlowUpRecognized()
         {
             Debug.Log("EXPLODERA");
-            if (ExplodeOnKeyword.Count > 0 && !_hasBeenPlayed)
+            var focusObject = GazeGestureManager.Instance.FocusedObject;
+            if (focusObject == gameObject && ExplodeOnKeyword && !_hasBeenPlayed)
             {
                 StartCoroutine(WaitAndBleep());
                 _timerHasStarted = true;
