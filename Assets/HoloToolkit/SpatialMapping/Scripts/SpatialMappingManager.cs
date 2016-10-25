@@ -3,7 +3,7 @@
 
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.VR.WSA;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -34,10 +34,19 @@ namespace HoloToolkit.Unity
         [Tooltip("Determines if spatial mapping data will cast shadows.")]
         public bool castShadows = false;
 
+        // If true, Spatial Mapping will be enabled. 
+        private bool mappingEnabled = true;
+
         /// <summary>
         /// Used for gathering real-time Spatial Mapping data on the HoloLens.
         /// </summary>
         private SpatialMappingObserver surfaceObserver;
+
+        // Creates/updates environment colliders to work with physics.
+        private SpatialMappingCollider spatialMappingCollider;
+
+        // Handles rendering of spatial mapping meshes.
+        private SpatialMappingRenderer spatialMappingRenderer;
 
         /// <summary>
         /// Time when StartObserver() was called.
@@ -63,6 +72,24 @@ namespace HoloToolkit.Unity
             if (autoStartObserver)
             {
                 StartObserver();
+            }
+        }
+
+        /// <summary>
+        /// Enables/disables spatial mapping rendering and collision.
+        /// </summary>
+        public bool MappingEnabled
+        {
+            get
+            {
+                return mappingEnabled;
+            }
+            set
+            {
+                mappingEnabled = value;
+                spatialMappingCollider.freezeUpdates = !mappingEnabled;
+                spatialMappingRenderer.freezeUpdates = !mappingEnabled;
+                gameObject.SetActive(mappingEnabled);
             }
         }
 

@@ -1,40 +1,70 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using HoloToolkit.Unity;
 using UnityEngine;
 using UnityEngine.Windows.Speech;
+using Random = UnityEngine.Random;
 
-namespace Assets
+namespace Assets.Scripts.GenericScripts
 {
     [RequireComponent(typeof(AudioSource))]
+    [RequireComponent(typeof(Collider))]
     public class Explode : MonoBehaviour
     {
         public GameObject ExplodingObject;
         public GameObject Explotion;
         public AudioClip ExplosionSound;
+        public AudioClip TimerTickBeepSound;
         public bool ExplodeOnGaze = false;
         public bool ExplodeOnTap = false;
-        public List<string> ExplodeOnKeyword;
+        public bool ExplodeOnKeyword = false;
+        public TextMesh Timer;
+        public List<GameObject> Debris;
+        public int NumberOfDebris;
+        public float SecondsToExplode;
+        public float ExplosionRadius;
+        public float ExplosionForceNewton;
+
+
+        private string _formattedTimeLeft;
+        private int _hoursLeft;
+        private int _minutesLeft;
+        private int _secondsLeft;
+        private bool _timerHasStarted = false;
 
         private AudioSource _audio;
         private bool _hasBeenPlayed;
-        private  GameObject _explotion;
-        private KeywordRecognizer _keywordRecognizer;
-        private Dictionary<string, KeywordAction> _keywordCollection;
+        private bool _hasBeenExploded;
+        private GameObject _explotion;
 
+        private List<GameObject> _debris;
 
-        delegate void KeywordAction(PhraseRecognizedEventArgs args);
 
         void Start()
         {
-            _keywordCollection = new Dictionary<string, KeywordAction>();
-            foreach (string keyWord in ExplodeOnKeyword) 
-            {
-                _keywordCollection.Add(keyWord, OnKeywordRecognized);
-            }
+            _debris = new List<GameObject>();
+            Timer.text = GetFormattedTimer(SecondsToExplode);
+            _hasBeenExploded = false;
             _audio = GetComponent<AudioSource>();
-            _audio.clip = ExplosionSound;
+            _audio.clip = TimerTickBeepSound;
             _hasBeenPlayed = false;
             _explotion = (GameObject)Instantiate(Explotion, gameObject.transform.position, Quaternion.identity);
+        }
+
+        void Update()
+        {
+            //If the tomer has not yet been started, we don't need to do anything
+            if (!_timerHasStarted) return;
+
+            SecondsToExplode -= Time.deltaTime;
+            
+            Timer.text = GetFormattedTimer(SecondsToExplode); 
+
+            if (!(SecondsToExplode <= 0) || _hasBeenExploded) return;
+            TriggerExplotion();
+            Timer.text = "00:00:00";
+            SecondsToExplode = 10;
         }
 
         // Called by GazeGestureManager when the user performs a Select gesture
@@ -42,7 +72,8 @@ namespace Assets
         {
             if (ExplodeOnGaze && !_hasBeenPlayed)
             {
-                TriggerExplotion();
+                StartCoroutine(WaitAndBleep());
+                _timerHasStarted = true;
             }
         }
 
@@ -50,32 +81,106 @@ namespace Assets
         {
             if (ExplodeOnTap && !_hasBeenPlayed)
             {
-                TriggerExplotion();
+                StartCoroutine(WaitAndBleep());
+                _timerHasStarted = true;
             }
         }
 
-        private void OnKeywordRecognized(PhraseRecognizedEventArgs args)
+        public void OnBlowUpRecognized()
         {
-            if (ExplodeOnTap && !_hasBeenPlayed)
+            var focusObject = GazeGestureManager.Instance.FocusedObject;
+            if (focusObject == gameObject && ExplodeOnKeyword && !_hasBeenPlayed)
             {
-                TriggerExplotion();
+                StartCoroutine(WaitAndBleep());
+                _timerHasStarted = true;
+            }
+        }
+
+        private void RemoveVertices(IEnumerable<GameObject> boundingObjects)
+        {
+            RemoveSurfaceVertices removeVerts = RemoveSurfaceVertices.Instance;
+            if (removeVerts != null && removeVerts.enabled)
+            {
+                removeVerts.RemoveSurfaceVerticesWithinBounds(boundingObjects);
             }
         }
 
         private void TriggerExplotion()
         {
+            //List<GameObject> test = new List<GameObject> { gameObject };
+            //RemoveVertices(test);
+            _hasBeenExploded = true;
+            StopCoroutine(WaitAndBleep());
+            MakeDebrisFly();
+            GetComponent<Collider>().enabled = false;
             StartCoroutine(PlaySoundAndDestroy());
             Destroy(ExplodingObject);
             _explotion.GetComponent<ParticleSystem>().Play();
+            _timerHasStarted = false;
             _hasBeenPlayed = true;
+        }
+
+        private void MakeDebrisFly()
+        {
+            //Spawn Debris
+            foreach (GameObject d in Debris)
+            {
+                for (int i = 0; i < NumberOfDebris; i++)
+                {
+                    Vector3 position = new Vector3(Random.Range(-1.0f, 1.0f), Random.Range(-1.0f, 1.0f), Random.Range(-1.0f, 1.0f));
+                    _debris.Add((GameObject)Instantiate(d, gameObject.transform.position + position, Quaternion.identity));
+                }
+            }
+
+            Collider[] colliders = Physics.OverlapSphere(gameObject.transform.position, ExplosionRadius);
+
+            foreach (Collider c in colliders)
+            {
+                Rigidbody rb = c.GetComponent<Rigidbody>();
+                if (rb != null)
+                    rb.AddExplosionForce(ExplosionForceNewton, gameObject.transform.position, ExplosionRadius, 2.0F);
+            }
+        }
+
+        private IEnumerator WaitAndBleep()
+        {
+            while (true)
+            {
+                if (_hasBeenExploded) break;
+
+                float waitTime = 1.0f;
+                if (_secondsLeft <= 7)
+                {
+                    waitTime = 0.3f;
+                }
+                if (_secondsLeft <= 5)
+                {
+                    waitTime = 0.2f;
+                }
+                if (_secondsLeft <= 2)
+                {
+                    waitTime = 0.1f;
+                }
+                _audio.Play();
+                yield return new WaitForSeconds(waitTime);
+            }
+        }
+
+        private string  GetFormattedTimer(float timer)
+        {
+            _minutesLeft = Mathf.FloorToInt(timer / 60F);
+            _secondsLeft = Mathf.FloorToInt(timer - _minutesLeft * 60);
+
+            _hoursLeft = 00;
+            return String.Format("{0:00}:{1:00}:{2:00}", _hoursLeft, _minutesLeft, _secondsLeft);
         }
 
         private IEnumerator PlaySoundAndDestroy()
         {
-            _audio = GetComponent<AudioSource>();
+            _audio.Stop();
             _audio.clip = ExplosionSound;
             _audio.Play();
-            yield return new WaitForSeconds(_audio.clip.length);
+            yield return new WaitForSeconds(ExplosionSound.length);
             Destroy(gameObject);
             Destroy(_explotion);
         }
