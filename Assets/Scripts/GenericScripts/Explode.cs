@@ -44,13 +44,12 @@ namespace Assets.Scripts.GenericScripts
         void Start()
         {
             _debris = new List<GameObject>();
-            Timer.text = SetTimer(SecondsToExplode);
+            Timer.text = GetFormattedTimer(SecondsToExplode);
             _hasBeenExploded = false;
             _audio = GetComponent<AudioSource>();
             _audio.clip = TimerTickBeepSound;
             _hasBeenPlayed = false;
             _explotion = (GameObject)Instantiate(Explotion, gameObject.transform.position, Quaternion.identity);
-
         }
 
         void Update()
@@ -60,7 +59,7 @@ namespace Assets.Scripts.GenericScripts
 
             SecondsToExplode -= Time.deltaTime;
             
-            Timer.text = SetTimer(SecondsToExplode); 
+            Timer.text = GetFormattedTimer(SecondsToExplode); 
 
             if (!(SecondsToExplode <= 0) || _hasBeenExploded) return;
             TriggerExplotion();
@@ -82,17 +81,13 @@ namespace Assets.Scripts.GenericScripts
         {
             if (ExplodeOnTap && !_hasBeenPlayed)
             {
-
-
                 StartCoroutine(WaitAndBleep());
                 _timerHasStarted = true;
-
             }
         }
 
         public void OnBlowUpRecognized()
         {
-            Debug.Log("EXPLODERA");
             var focusObject = GazeGestureManager.Instance.FocusedObject;
             if (focusObject == gameObject && ExplodeOnKeyword && !_hasBeenPlayed)
             {
@@ -144,7 +139,6 @@ namespace Assets.Scripts.GenericScripts
                 Rigidbody rb = c.GetComponent<Rigidbody>();
                 if (rb != null)
                     rb.AddExplosionForce(ExplosionForceNewton, gameObject.transform.position, ExplosionRadius, 2.0F);
-                
             }
         }
 
@@ -172,7 +166,7 @@ namespace Assets.Scripts.GenericScripts
             }
         }
 
-        private string  SetTimer(float timer)
+        private string  GetFormattedTimer(float timer)
         {
             _minutesLeft = Mathf.FloorToInt(timer / 60F);
             _secondsLeft = Mathf.FloorToInt(timer - _minutesLeft * 60);
