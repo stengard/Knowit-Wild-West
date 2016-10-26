@@ -311,6 +311,11 @@ Prefab:
       propertyPath: ExplodeOnKeyword
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114000013609472378, guid: c039508473609a44a868e336284fa44e,
+        type: 2}
+      propertyPath: SecondsToExplode
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c039508473609a44a868e336284fa44e, type: 2}
   m_IsPrefabParent: 0
