@@ -54,6 +54,7 @@ namespace Assets.Scripts.GenericScripts
 
         void Update()
         {
+ 
             //If the tomer has not yet been started, we don't need to do anything
             if (!_timerHasStarted) return;
 

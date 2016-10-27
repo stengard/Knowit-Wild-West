@@ -19,6 +19,7 @@ namespace HoloToolkit.Unity
     /// information about the manipulation gesture via ManipulationOffset and ManipulationHandPosition
     /// </remarks>
     [RequireComponent(typeof(GazeManager))]
+    [RequireComponent(typeof(AudioSource))]
     public partial class GestureManager : Singleton<GestureManager>
     {
         /// <summary>
@@ -80,13 +81,15 @@ namespace HoloToolkit.Unity
             }
         }
 
-        private GestureRecognizer gestureRecognizer;
+        private GestureRecognizer airTapGestureRecognizer;
+        private GestureRecognizer holdRecognizer;
         // We use a separate manipulation recognizer here because the tap gesture recognizer cancels
         // capturing gestures whenever the GazeManager focus changes, which is not the behavior
         // we want for manipulation
         private GestureRecognizer manipulationRecognizer;
 
         private bool hasRecognitionStarted = false;
+        private bool hasHoldStarted = false;
 
         private bool HandPressed { get { return pressedHands.Count > 0; } }
         private HashSet<uint> pressedHands = new HashSet<uint>();
@@ -101,28 +104,41 @@ namespace HoloToolkit.Unity
             InteractionManager.SourceLost += InteractionManager_SourceLost;
 
             // Create a new GestureRecognizer. Sign up for tapped events.
-            gestureRecognizer = new GestureRecognizer();
-            gestureRecognizer.SetRecognizableGestures(GestureSettings.Tap);
+            airTapGestureRecognizer = new GestureRecognizer();
+            airTapGestureRecognizer.SetRecognizableGestures(GestureSettings.Tap);
+
+            holdRecognizer = new GestureRecognizer();
+            holdRecognizer.SetRecognizableGestures(GestureSettings.Hold);
+        
 
             manipulationRecognizer = new GestureRecognizer();
             manipulationRecognizer.SetRecognizableGestures(GestureSettings.ManipulationTranslate);
 
-            gestureRecognizer.TappedEvent += GestureRecognizer_TappedEvent;
+            holdRecognizer.HoldStartedEvent += GestureRecognizer_HoldEventStarted;
+            holdRecognizer.HoldCompletedEvent += GestureRecognizer_HoldEventCompleted;
+            holdRecognizer.HoldCanceledEvent += GestureRecognizer_HoldEventCanceled;
+            airTapGestureRecognizer.TappedEvent += GestureRecognizer_TappedEvent;
 
             // We need to send pressed and released events to UI so they can provide visual feedback
             // of the current state of the UI based on user input.
-            gestureRecognizer.RecognitionStartedEvent += GestureRecognizer_RecognitionStartedEvent;
-            gestureRecognizer.RecognitionEndedEvent += GestureRecogniser_RecognitionEndedEvent;
+            airTapGestureRecognizer.RecognitionStartedEvent += GestureRecognizer_RecognitionStartedEvent;
+            airTapGestureRecognizer.RecognitionEndedEvent += GestureRecogniser_RecognitionEndedEvent;
 
+            holdRecognizer.RecognitionStartedEvent += GestureRecognizer_RecognitionStartedEvent;
+            holdRecognizer.RecognitionEndedEvent += GestureRecogniser_RecognitionEndedEvent;
             manipulationRecognizer.ManipulationStartedEvent += ManipulationRecognizer_ManipulationStartedEvent;
             manipulationRecognizer.ManipulationUpdatedEvent += ManipulationRecognizer_ManipulationUpdatedEvent;
             manipulationRecognizer.ManipulationCompletedEvent += ManipulationRecognizer_ManipulationCompletedEvent;
             manipulationRecognizer.ManipulationCanceledEvent += ManipulationRecognizer_ManipulationCanceledEvent;
 
             // Start looking for gestures.
-            gestureRecognizer.StartCapturingGestures();
+            airTapGestureRecognizer.StartCapturingGestures();
+            holdRecognizer.StartCapturingGestures();
             manipulationRecognizer.StartCapturingGestures();
         }
+
+
+
 
         private void InteractionManager_SourcePressed(InteractionSourceState state)
         {
@@ -152,10 +168,28 @@ namespace HoloToolkit.Unity
             pressedHands.Remove(state.source.id);
         }
 
+        private void GestureRecognizer_HoldEventCompleted(InteractionSourceKind source, Ray headray)
+        {
+            OnHoldCompleted();
+
+        }
+
+        private void GestureRecognizer_HoldEventCanceled(InteractionSourceKind source, Ray headray)
+        {
+            OnHoldCompleted();
+
+        }
+
+        private void GestureRecognizer_HoldEventStarted(InteractionSourceKind source, Ray headray)
+        {
+            OnHoldStarted();
+        }
+
         private void GestureRecognizer_TappedEvent(InteractionSourceKind source, int tapCount, Ray headRay)
         {
             OnTap();
         }
+
 
         private void GestureRecognizer_RecognitionStartedEvent(InteractionSourceKind source, Ray headRay)
         {
@@ -169,10 +203,36 @@ namespace HoloToolkit.Unity
 
         private void OnTap()
         {
+            GetComponent<AudioSource>().Play();
+            if (hasHoldStarted) return;
+
             if (FocusedObject != null)
             {
                 FocusedObject.SendMessage("OnSelect", SendMessageOptions.DontRequireReceiver);
             }
+        }
+
+        private void OnHoldStarted()
+        {
+            if (FocusedObject != null)
+            {
+                airTapGestureRecognizer.StopCapturingGestures();
+                hasHoldStarted = true;
+                FocusedObject.SendMessage("OnHoldStarted", SendMessageOptions.DontRequireReceiver);
+            }
+        }
+
+        private void OnHoldCompleted()
+        {
+            GetComponent<AudioSource>().Play();
+            if (FocusedObject != null)
+            {
+                FocusedObject.SendMessage("OnHoldCompleted", SendMessageOptions.DontRequireReceiver);
+            }
+            hasHoldStarted = false;
+            airTapGestureRecognizer.StartCapturingGestures();
+
+
         }
 
         private void OnRecognitionStarted()
@@ -259,11 +319,22 @@ namespace HoloToolkit.Unity
             bool focusedChanged = FocusedObject != newFocusedObject;
 
 #if UNITY_EDITOR
+
             if (Input.GetMouseButtonDown(1) || Input.GetKeyDown(EditorSelectKey))
             {
                 OnTap();
-                OnRecognitionStarted();
             }
+
+
+            //if (Input.GetMouseButton(1) || Input.GetKey(EditorSelectKey))
+            //{
+            //    OnHoldStarted();
+            //}
+
+            //if (Input.GetMouseButtonUp(1) || Input.GetKeyUp(EditorSelectKey))
+            //{
+            //    OnHoldCompleted();
+            //}
 
             if (Input.GetMouseButtonUp(1) || Input.GetKeyUp(EditorSelectKey) || focusedChanged)
             {
@@ -274,18 +345,26 @@ namespace HoloToolkit.Unity
             {
                 // If the currently focused object doesn't match the new focused object, cancel the current gesture.
                 // Start looking for new gestures.  This is to prevent applying gestures from one hologram to another.
-                gestureRecognizer.CancelGestures();
+                airTapGestureRecognizer.CancelGestures();
+                airTapGestureRecognizer.StartCapturingGestures();
+
+                holdRecognizer.CancelGestures();
+                holdRecognizer.StartCapturingGestures();
+
                 FocusedObject = newFocusedObject;
-                gestureRecognizer.StartCapturingGestures();
             }
         }
 
         void OnDestroy()
         {
-            gestureRecognizer.StopCapturingGestures();
-            gestureRecognizer.TappedEvent -= GestureRecognizer_TappedEvent;
-            gestureRecognizer.RecognitionStartedEvent -= GestureRecognizer_RecognitionStartedEvent;
-            gestureRecognizer.RecognitionEndedEvent -= GestureRecogniser_RecognitionEndedEvent;
+            airTapGestureRecognizer.StopCapturingGestures();
+            airTapGestureRecognizer.TappedEvent -= GestureRecognizer_TappedEvent;
+            airTapGestureRecognizer.RecognitionStartedEvent -= GestureRecognizer_RecognitionStartedEvent;
+            airTapGestureRecognizer.RecognitionEndedEvent -= GestureRecogniser_RecognitionEndedEvent;
+
+            holdRecognizer.StopCapturingGestures();
+            holdRecognizer.HoldStartedEvent -= GestureRecognizer_HoldEventStarted;
+            holdRecognizer.HoldCompletedEvent -= GestureRecognizer_HoldEventCompleted;
 
             manipulationRecognizer.StopCapturingGestures();
             manipulationRecognizer.ManipulationStartedEvent -= ManipulationRecognizer_ManipulationStartedEvent;

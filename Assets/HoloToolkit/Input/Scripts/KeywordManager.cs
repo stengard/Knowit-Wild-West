@@ -54,7 +54,6 @@ namespace HoloToolkit.Unity
                 // This helps easily link the keyword recognized to the UnityEvent to be invoked.
                 responses = KeywordsAndResponses.ToDictionary(keywordAndResponse => keywordAndResponse.Keyword,
                                                               keywordAndResponse => keywordAndResponse.Response);
-
                 keywordRecognizer = new KeywordRecognizer(responses.Keys.ToArray());
                 keywordRecognizer.OnPhraseRecognized += KeywordRecognizer_OnPhraseRecognized;
 
@@ -99,7 +98,7 @@ namespace HoloToolkit.Unity
         private void KeywordRecognizer_OnPhraseRecognized(PhraseRecognizedEventArgs args)
         {
             UnityEvent keywordResponse;
-
+            Debug.Log("asdasdsad");
             // Check to make sure the recognized keyword exists in the methods dictionary, then invoke the corresponding method.
             if (responses.TryGetValue(args.text, out keywordResponse))
             {

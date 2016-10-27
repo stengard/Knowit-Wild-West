@@ -66,15 +66,14 @@ namespace HoloToolkit.Unity
         // Called by GazeGestureManager when the user performs a tap gesture.
         public void OnSelect()
         {
-            if (anchorManager.AnchorStore == null) return;
-
             // On each tap gesture, toggle whether the user is in placing mode.
             placing = !placing;
 
             // If the user is in placing mode, display the spatial mapping mesh.
             if (placing)
             {
-                spatialMappingManager.DrawVisualMeshes = true;
+                //spatialMappingManager.DrawVisualMeshes = true;
+
                 Debug.Log(gameObject.name + " : Removing existing world anchor if any.");
 
                 anchorManager.RemoveAnchor(gameObject);
@@ -82,7 +81,7 @@ namespace HoloToolkit.Unity
             // If the user is not in placing mode, hide the spatial mapping mesh.
             else
             {
-                spatialMappingManager.DrawVisualMeshes = false;
+                //spatialMappingManager.DrawVisualMeshes = false;
                 // Add world anchor when object placement is done.
                 anchorManager.AttachAnchor(gameObject, SavedAnchorFriendlyName);
             }
@@ -99,7 +98,8 @@ namespace HoloToolkit.Unity
                 var gazeDirection = Camera.main.transform.forward;
 
                 RaycastHit hitInfo;
-                if (Physics.Raycast(headPosition, gazeDirection, out hitInfo,30.0f, spatialMappingManager.LayerMask))
+                if (Physics.Raycast(headPosition, gazeDirection, out hitInfo,
+                    30.0f, spatialMappingManager.LayerMask))
                 {
                     // Move this object to where the raycast
                     // hit the Spatial Mapping mesh.
