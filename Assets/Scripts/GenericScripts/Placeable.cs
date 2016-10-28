@@ -141,7 +141,13 @@ public class Placeable : MonoBehaviour
 
     public void OnHoldCompleted()
     {
+        
         OnPlacementStop();
+    }
+
+    public void OnHoldCanceled()
+    {
+        OnPlacementCanceled();
     }
 
     /// <summary>
@@ -363,6 +369,8 @@ public class Placeable : MonoBehaviour
         if (!ValidatePlacement(out position, out surfaceNormal))
         {
             gameObject.transform.position = originalPosition;
+            IsPlacing = false;
+            GestureManager.Instance.OverrideFocusedObject = null;
             return;
         }
 
@@ -384,6 +392,14 @@ public class Placeable : MonoBehaviour
 
         // Exit placement mode.
         IsPlacing = false;
+    }
+
+    public void OnPlacementCanceled()
+    {
+        Debug.Log("placement canceled");
+        gameObject.transform.position = originalPosition;
+        IsPlacing = false;
+        GestureManager.Instance.OverrideFocusedObject = null;
     }
 
     /// <summary>
@@ -517,9 +533,7 @@ public class Placeable : MonoBehaviour
     /// <param name="canBePlaced">
     /// Specifies if the object is in a valid placement location.
     /// </param>
-    private void DisplayShadow(Vector3 position,
-                            Vector3 surfaceNormal,
-                            bool canBePlaced)
+    private void DisplayShadow(Vector3 position, Vector3 surfaceNormal, bool canBePlaced)
     {
         // Rotate the shadow so that it is displayed on the correct surface and matches the object.
         float rotationX = 0.0f;
