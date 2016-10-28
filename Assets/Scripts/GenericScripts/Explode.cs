@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using HoloToolkit.Unity;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Windows.Speech;
 using Random = UnityEngine.Random;
 
@@ -19,12 +20,14 @@ namespace Assets.Scripts.GenericScripts
         public bool ExplodeOnGaze = false;
         public bool ExplodeOnTap = false;
         public bool ExplodeOnKeyword = false;
-        public TextMesh Timer;
+
+        public Text TimerText;
         public List<GameObject> Debris;
         public int NumberOfDebris;
         public float SecondsToExplode;
         public float ExplosionRadius;
         public float ExplosionForceNewton;
+        public float DebrisSpawnRadius;
 
 
         private string _formattedTimeLeft;
@@ -44,7 +47,7 @@ namespace Assets.Scripts.GenericScripts
         void Start()
         {
             _debris = new List<GameObject>();
-            Timer.text = GetFormattedTimer(SecondsToExplode);
+            TimerText.text = GetFormattedTimer(SecondsToExplode);
             _hasBeenExploded = false;
             _audio = GetComponent<AudioSource>();
             _audio.clip = TimerTickBeepSound;
@@ -59,12 +62,12 @@ namespace Assets.Scripts.GenericScripts
             if (!_timerHasStarted) return;
 
             SecondsToExplode -= Time.deltaTime;
-            
-            Timer.text = GetFormattedTimer(SecondsToExplode); 
+
+            TimerText.text = GetFormattedTimer(SecondsToExplode); 
 
             if (!(SecondsToExplode <= 0) || _hasBeenExploded) return;
             TriggerExplotion();
-            Timer.text = "00:00:00";
+            TimerText.text = "00:00:00";
             SecondsToExplode = 10;
         }
 
@@ -89,7 +92,12 @@ namespace Assets.Scripts.GenericScripts
 
         public void OnBlowUpRecognized()
         {
-            var focusObject = GazeGestureManager.Instance.FocusedObject;
+
+
+            var focusObject = GestureManager.Instance.FocusedObject;
+            Debug.Log("gameobject" + focusObject.name);
+            Debug.Log("Focus" + gameObject.name);
+
             if (focusObject == gameObject && ExplodeOnKeyword && !_hasBeenPlayed)
             {
                 StartCoroutine(WaitAndBleep());
@@ -113,6 +121,7 @@ namespace Assets.Scripts.GenericScripts
             _hasBeenExploded = true;
             StopCoroutine(WaitAndBleep());
             MakeDebrisFly();
+            TimerText.enabled = false;
             GetComponent<Collider>().enabled = false;
             StartCoroutine(PlaySoundAndDestroy());
             Destroy(ExplodingObject);
@@ -124,14 +133,13 @@ namespace Assets.Scripts.GenericScripts
         private void MakeDebrisFly()
         {
             //Spawn Debris
-            foreach (GameObject d in Debris)
+
+            for (int i = 0; i < NumberOfDebris; i++)
             {
-                for (int i = 0; i < NumberOfDebris; i++)
-                {
-                    Vector3 position = new Vector3(Random.Range(-1.0f, 1.0f), Random.Range(-1.0f, 1.0f), Random.Range(-1.0f, 1.0f));
-                    _debris.Add((GameObject)Instantiate(d, gameObject.transform.position + position, Quaternion.identity));
-                }
+                Vector3 position = new Vector3(Random.Range(-DebrisSpawnRadius, DebrisSpawnRadius), Random.Range(0, DebrisSpawnRadius*2), Random.Range(-DebrisSpawnRadius, DebrisSpawnRadius));
+                _debris.Add((GameObject)Instantiate(Debris[Random.Range(0, Debris.Count)], gameObject.transform.position + position, Quaternion.identity));
             }
+            
 
             Collider[] colliders = Physics.OverlapSphere(gameObject.transform.position, ExplosionRadius);
 

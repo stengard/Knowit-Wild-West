@@ -98,7 +98,7 @@ namespace HoloToolkit.Unity
         private void KeywordRecognizer_OnPhraseRecognized(PhraseRecognizedEventArgs args)
         {
             UnityEvent keywordResponse;
-            Debug.Log("asdasdsad");
+            Debug.Log("Keyword Recognized");
             // Check to make sure the recognized keyword exists in the methods dictionary, then invoke the corresponding method.
             if (responses.TryGetValue(args.text, out keywordResponse))
             {

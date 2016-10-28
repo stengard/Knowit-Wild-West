@@ -81,6 +81,10 @@ namespace HoloToolkit.Unity
             }
         }
 
+        public AudioClip SelectAudio;
+        public AudioClip HoldStartedAudio;
+        public AudioClip HoldCompletedAudio;
+
         private GestureRecognizer airTapGestureRecognizer;
         private GestureRecognizer holdRecognizer;
         // We use a separate manipulation recognizer here because the tap gesture recognizer cancels
@@ -176,8 +180,7 @@ namespace HoloToolkit.Unity
 
         private void GestureRecognizer_HoldEventCanceled(InteractionSourceKind source, Ray headray)
         {
-            OnHoldCompleted();
-
+            OnHoldCanceled();
         }
 
         private void GestureRecognizer_HoldEventStarted(InteractionSourceKind source, Ray headray)
@@ -203,7 +206,7 @@ namespace HoloToolkit.Unity
 
         private void OnTap()
         {
-            GetComponent<AudioSource>().Play();
+            GetComponent<AudioSource>().PlayOneShot(SelectAudio);
             if (hasHoldStarted) return;
 
             if (FocusedObject != null)
@@ -214,6 +217,8 @@ namespace HoloToolkit.Unity
 
         private void OnHoldStarted()
         {
+            if(!hasHoldStarted) GetComponent<AudioSource>().PlayOneShot(HoldStartedAudio);
+
             if (FocusedObject != null)
             {
                 airTapGestureRecognizer.StopCapturingGestures();
@@ -224,15 +229,27 @@ namespace HoloToolkit.Unity
 
         private void OnHoldCompleted()
         {
-            GetComponent<AudioSource>().Play();
+
             if (FocusedObject != null)
             {
                 FocusedObject.SendMessage("OnHoldCompleted", SendMessageOptions.DontRequireReceiver);
             }
+            GetComponent<AudioSource>().PlayOneShot(HoldCompletedAudio);
+
             hasHoldStarted = false;
             airTapGestureRecognizer.StartCapturingGestures();
+        }
 
+        private void OnHoldCanceled()
+        {
+            if (FocusedObject != null)
+            {
+                FocusedObject.SendMessage("OnHoldCanceled", SendMessageOptions.DontRequireReceiver);
+            }
+            GetComponent<AudioSource>().PlayOneShot(HoldCompletedAudio);
 
+            hasHoldStarted = false;
+            airTapGestureRecognizer.StartCapturingGestures();
         }
 
         private void OnRecognitionStarted()
@@ -320,21 +337,25 @@ namespace HoloToolkit.Unity
 
 #if UNITY_EDITOR
 
-            if (Input.GetMouseButtonDown(1) || Input.GetKeyDown(EditorSelectKey))
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 OnTap();
             }
 
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                OnHoldCanceled();
+            }
 
-            //if (Input.GetMouseButton(1) || Input.GetKey(EditorSelectKey))
-            //{
-            //    OnHoldStarted();
-            //}
+            if (Input.GetMouseButton(1) || Input.GetKey(EditorSelectKey))
+            {
+                OnHoldStarted();
+            }
 
-            //if (Input.GetMouseButtonUp(1) || Input.GetKeyUp(EditorSelectKey))
-            //{
-            //    OnHoldCompleted();
-            //}
+            if (Input.GetMouseButtonUp(1) || Input.GetKeyUp(EditorSelectKey))
+            {
+                OnHoldCompleted();
+            }
 
             if (Input.GetMouseButtonUp(1) || Input.GetKeyUp(EditorSelectKey) || focusedChanged)
             {
