@@ -53,6 +53,7 @@ namespace Assets.Scripts.GenericScripts
             _audio.clip = TimerTickBeepSound;
             _hasBeenPlayed = false;
             _explotion = (GameObject)Instantiate(Explotion, gameObject.transform.position, Quaternion.identity);
+            _explotion.transform.parent = gameObject.transform;
         }
 
         void Update()
@@ -92,11 +93,7 @@ namespace Assets.Scripts.GenericScripts
 
         public void OnBlowUpRecognized()
         {
-
-
             var focusObject = GestureManager.Instance.FocusedObject;
-            Debug.Log("gameobject" + focusObject.name);
-            Debug.Log("Focus" + gameObject.name);
 
             if (focusObject == gameObject && ExplodeOnKeyword && !_hasBeenPlayed)
             {
@@ -116,8 +113,8 @@ namespace Assets.Scripts.GenericScripts
 
         private void TriggerExplotion()
         {
-            //List<GameObject> test = new List<GameObject> { gameObject };
-            //RemoveVertices(test);
+            List<GameObject> test = new List<GameObject> { gameObject };
+            RemoveVertices(test);
             _hasBeenExploded = true;
             StopCoroutine(WaitAndBleep());
             MakeDebrisFly();
@@ -145,7 +142,9 @@ namespace Assets.Scripts.GenericScripts
 
             foreach (Collider c in colliders)
             {
+                
                 Rigidbody rb = c.GetComponent<Rigidbody>();
+                //if (rb == null) c.gameObject.AddComponent<Rigidbody>();
                 if (rb != null)
                     rb.AddExplosionForce(ExplosionForceNewton, gameObject.transform.position, ExplosionRadius, 2.0F);
             }
