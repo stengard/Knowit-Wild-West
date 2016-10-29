@@ -149,6 +149,7 @@ namespace HoloToolkit.Unity
                         continue;
                     }
 
+                    //martin.. sitället för att ta bort. testa ända material.
                     // Remove vertices from any mesh that intersects with the bounds.
                     Vector3[] verts = mesh.vertices;
                     List<int> vertsToRemove = new List<int>();

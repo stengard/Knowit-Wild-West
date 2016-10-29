@@ -38,9 +38,9 @@ public class ObjectSpawner : MonoBehaviour
 
     void SpawnObject()
     {
-        float spawnerSize = transform.GetComponent<Collider>().bounds.size.y;
-
-        Vector3 spawnPosition = new Vector3(transform.position.x, transform.position.y + spawnerSize + SpawnOffset, transform.position.z);
+        var spawnerSize = transform.GetComponent<Collider>().bounds.size.y;
+        double offset = (double)spawnerSize/2 + (double)SpawnOffset;
+        Vector3 spawnPosition = new Vector3(transform.position.x, transform.position.y + (float)offset, transform.position.z);
 
         GameObject spawned = (GameObject)Instantiate(ObjectToSpawn, spawnPosition, transform.rotation);
         spawned.transform.parent = ParentToSpawnOn.transform;

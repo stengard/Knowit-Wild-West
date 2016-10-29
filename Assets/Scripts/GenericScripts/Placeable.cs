@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using HoloToolkit.Unity;
+using UnityEngine.VR.WSA;
 
 /// <summary>
 /// Enumeration containing the surfaces on which a GameObject
@@ -92,7 +93,6 @@ public class Placeable : MonoBehaviour
     // The location at which the object will be placed.
     private Vector3 targetPosition;
 
-    private WorldAnchorManager anchorManager;
 
 
 
@@ -159,10 +159,9 @@ public class Placeable : MonoBehaviour
 
         if (IsPlacing)
         {
-            SpatialMappingManager.Instance.DrawVisualMeshes = true;
-
             // Move the object.
             Move();
+
 
             // Set the visual elements.
             Vector3 targetPosition;
@@ -173,7 +172,6 @@ public class Placeable : MonoBehaviour
         }
         else
         {
-            SpatialMappingManager.Instance.DrawVisualMeshes = false;
 
             // Disable the visual elements.
             boundsAsset.SetActive(false);
@@ -194,6 +192,17 @@ public class Placeable : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void RemoveAnchor(GameObject objectToRemoveAnchor)
+    {
+        WorldAnchorManager.Instance.RemoveAnchor(objectToRemoveAnchor);
+    }
+
+
+    private void PlaceAnchor(string objectName, GameObject objectToAnchor)
+    {
+        WorldAnchorManager.Instance.AttachAnchor(objectToAnchor,objectName);
     }
 
     /// <summary>
@@ -345,9 +354,10 @@ public class Placeable : MonoBehaviour
         // Tell the gesture manager that it is to assume
         // all input is to be given to this object.
         GestureManager.Instance.OverrideFocusedObject = gameObject;
-
+        //RemoveAnchor(gameObject);
         // Enter placement mode.
         IsPlacing = true;
+
     }
 
     /// <summary>
@@ -389,8 +399,8 @@ public class Placeable : MonoBehaviour
         // Tell the gesture manager that it is to resume
         // its normal behavior.
         GestureManager.Instance.OverrideFocusedObject = null;
-
         // Exit placement mode.
+        //PlaceAnchor(gameObject.name, gameObject);
         IsPlacing = false;
     }
 
