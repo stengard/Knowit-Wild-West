@@ -305,6 +305,7 @@ namespace HoloToolkit.Unity
         /// <param name="Enable">True, if meshes should be rendered.</param>
         private void UpdateRendering(bool Enable)
         {
+
             List<MeshRenderer> renderers = Source.GetMeshRenderers();
             for (int index = 0; index < renderers.Count; index++)
             {

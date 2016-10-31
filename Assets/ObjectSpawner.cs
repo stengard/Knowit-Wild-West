@@ -1,19 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using Assets;
 
 public class ObjectSpawner : MonoBehaviour
 {
 
-    public GameObject ObjectToSpawn;
+    public List<GameObject> ObjectsToSpawn;
     public GameObject ParentToSpawnOn;
     public bool SpawnOnGaze = false;
     public bool SpawnOnTap = false;
     public bool SpawnOnKeyword = false;
     public float SpawnOffset;
 
+
+    private GameObject _spawnedGameObject;
+
     // Use this for initialization
     void Start () {
-        if (ObjectToSpawn == null)
+        if (ObjectsToSpawn.Count < 1)
         {
             Debug.LogError("You need to have a game object attached to the scipt so what we can spawn it for you");
         }
@@ -41,9 +46,10 @@ public class ObjectSpawner : MonoBehaviour
         var spawnerSize = transform.GetComponent<Collider>().bounds.size.y;
         double offset = (double)spawnerSize/2 + (double)SpawnOffset;
         Vector3 spawnPosition = new Vector3(transform.position.x, transform.position.y + (float)offset, transform.position.z);
+        RemoveNonMovedChildren();
 
-        GameObject spawned = (GameObject)Instantiate(ObjectToSpawn, spawnPosition, transform.rotation);
-        spawned.transform.parent = ParentToSpawnOn.transform;
+        _spawnedGameObject = (GameObject)Instantiate(ObjectsToSpawn[Random.Range(0, ObjectsToSpawn.Count)], spawnPosition, transform.rotation);
+        _spawnedGameObject.transform.parent = ParentToSpawnOn.transform;
         //float spawnerSize = transform.GetComponent<Collider>().bounds.size.y;
         //float objectSize = spawnedObject.GetComponent<Collider>().bounds.size.y;
         //Debug.Log(spawnerSize + " " + objectSize);
@@ -60,5 +66,16 @@ public class ObjectSpawner : MonoBehaviour
 
         //spawnedObject.transform.position = spawnPosition;
 
+    }
+
+
+    private void RemoveNonMovedChildren()
+    {
+        foreach (Transform child in transform.parent)
+        {
+            if (!child.CompareTag(TagHelper.MOVED_TAG) && child != gameObject.transform)
+                Destroy(child.gameObject);
+                
+        }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Assets;
 using UnityEngine;
 using HoloToolkit.Unity;
 using UnityEngine.VR.WSA;
@@ -92,6 +93,8 @@ public class Placeable : MonoBehaviour
 
     // The location at which the object will be placed.
     private Vector3 targetPosition;
+
+
 
 
 
@@ -345,6 +348,8 @@ public class Placeable : MonoBehaviour
             boxCollider.enabled = true;
         }
         SpatialMappingManager.Instance.DrawVisualMeshes = true;
+        SpatialMappingManager.Instance.SetSurfaceMaterial(SpatialProcessingTest.Instance.defaultMaterial);
+
         // Hide the child object(s) to make placement easier.
         for (int i = 0; i < ChildrenToHide.Count; i++)
         {
@@ -374,6 +379,7 @@ public class Placeable : MonoBehaviour
         Vector3 position;
         Vector3 surfaceNormal;
         SpatialMappingManager.Instance.DrawVisualMeshes = false;
+        SpatialMappingManager.Instance.SetSurfaceMaterial(SpatialProcessingTest.Instance.secondaryMaterial);
 
         // Check to see if we can exit placement mode.
         if (!ValidatePlacement(out position, out surfaceNormal))
@@ -387,6 +393,10 @@ public class Placeable : MonoBehaviour
         // The object is allowed to be placed.
         // We are placing at a small buffer away from the surface.
         targetPosition = position + (0.01f * surfaceNormal);
+
+
+
+        gameObject.tag = TagHelper.MOVED_TAG;
 
         OrientObject(true, surfaceNormal);
 
@@ -406,7 +416,6 @@ public class Placeable : MonoBehaviour
 
     public void OnPlacementCanceled()
     {
-        Debug.Log("placement canceled");
         gameObject.transform.position = originalPosition;
         IsPlacing = false;
         GestureManager.Instance.OverrideFocusedObject = null;
