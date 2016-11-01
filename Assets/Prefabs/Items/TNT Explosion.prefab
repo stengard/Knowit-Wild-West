@@ -1154,7 +1154,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExplodingObject: {fileID: 1000011761621994}
   Explotion: {fileID: 1000012597182454, guid: bee2bc74ff80d644e9aa732a10f6bf6f, type: 2}
-  ExplosionSound: {fileID: 8300000, guid: 36895597d859f3e43b9f4df1162f61c9, type: 3}
+  ExplosionSounds:
+  - {fileID: 8300000, guid: 36895597d859f3e43b9f4df1162f61c9, type: 3}
+  - {fileID: 8300000, guid: a35f27e7b05101a4cbb8e2e60d99b88b, type: 3}
   TimerTickBeepSound: {fileID: 8300000, guid: de0f9145ddf37d74597c06c196965e9d, type: 3}
   ExplodeOnGaze: 0
   ExplodeOnTap: 1

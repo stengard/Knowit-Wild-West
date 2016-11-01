@@ -15,7 +15,7 @@ namespace Assets.Scripts.GenericScripts
     {
         public GameObject ExplodingObject;
         public GameObject Explotion;
-        public AudioClip ExplosionSound;
+        public List<AudioClip> ExplosionSounds;
         public AudioClip TimerTickBeepSound;
         public bool ExplodeOnGaze = false;
         public bool ExplodeOnTap = false;
@@ -186,9 +186,9 @@ namespace Assets.Scripts.GenericScripts
         private IEnumerator PlaySoundAndDestroy()
         {
             _audio.Stop();
-            _audio.clip = ExplosionSound;
+            _audio.clip = ExplosionSounds[Random.Range(0, ExplosionSounds.Count)];
             _audio.Play();
-            yield return new WaitForSeconds(ExplosionSound.length);
+            yield return new WaitForSeconds(_audio.clip.length);
             Destroy(gameObject);
             Destroy(_explotion);
         }

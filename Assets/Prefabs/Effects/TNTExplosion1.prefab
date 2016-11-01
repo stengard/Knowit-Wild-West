@@ -107,7 +107,7 @@ GameObject:
   - 198: {fileID: 198000010773244960}
   - 199: {fileID: 199000010225916462}
   m_Layer: 0
-  m_Name: TNTExplosion
+  m_Name: TNTExplosion1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
