@@ -141,8 +141,7 @@ namespace Assets.Scripts.GenericScripts
             Collider[] colliders = Physics.OverlapSphere(gameObject.transform.position, ExplosionRadius);
 
             foreach (Collider c in colliders)
-            {
-                
+            {        
                 Rigidbody rb = c.GetComponent<Rigidbody>();
                 //if (rb == null) c.gameObject.AddComponent<Rigidbody>();
                 if (rb != null)

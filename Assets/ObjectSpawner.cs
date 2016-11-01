@@ -12,6 +12,8 @@ public class ObjectSpawner : MonoBehaviour
     public bool SpawnOnTap = false;
     public bool SpawnOnKeyword = false;
     public float SpawnOffset;
+    public float MinSizeAdd = 0;
+    public float MaxSizeAdd = 0;
 
 
     private GameObject _spawnedGameObject;
@@ -49,6 +51,9 @@ public class ObjectSpawner : MonoBehaviour
         RemoveNonMovedChildren();
 
         _spawnedGameObject = (GameObject)Instantiate(ObjectsToSpawn[Random.Range(0, ObjectsToSpawn.Count)], spawnPosition, transform.rotation);
+
+        float sizeToAdd = Random.Range(MinSizeAdd, MaxSizeAdd);
+        _spawnedGameObject.transform.localScale += new Vector3(sizeToAdd, sizeToAdd, sizeToAdd);
         _spawnedGameObject.transform.parent = ParentToSpawnOn.transform;
         //float spawnerSize = transform.GetComponent<Collider>().bounds.size.y;
         //float objectSize = spawnedObject.GetComponent<Collider>().bounds.size.y;
