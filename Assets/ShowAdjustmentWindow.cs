@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using HoloToolkit.Unity;
 
 
 public class ShowAdjustmentWindow : MonoBehaviour
@@ -16,6 +16,8 @@ public class ShowAdjustmentWindow : MonoBehaviour
 
     public float ShowWindowDelay;
     public GameObject AdjustmentWindow;
+    public bool ShowOnGaze = false;
+    public bool ShowOnKeyWord = true;
 
     private float _timeLeft;
     private bool _gazeHasEnteredObject = false;
@@ -43,22 +45,49 @@ public class ShowAdjustmentWindow : MonoBehaviour
 
     }
 
+    public void ShowMenuRecognized()
+    {
+        if (!ShowOnKeyWord) return;
+
+        var focusObject = GestureManager.Instance.FocusedObject;
+
+        if (focusObject == gameObject)
+        {
+            if (_currentStatus == CurrentStatus.Idle)
+            {
+                _currentStatus = CurrentStatus.WaitingForDelay;
+
+            }
+            else
+            {
+                HideMenu();
+            }
+        }
+    }
+
+
     void OnGazeEnter()
     {
+        if (!ShowOnGaze) return;
         _currentStatus = CurrentStatus.WaitingForDelay;
     }
 
     void OnGazeLeave()
     {
-
+        if (!ShowOnGaze) return;
         _exitedCount++;
         if (_exitedCount > 1)
         {
-            Debug.Log("Gömmer rutan");
-            _timeLeft = ShowWindowDelay;
-            _currentStatus = CurrentStatus.Idle;
-            _exitedCount = 0;
-            AdjustmentWindow.SetActive(false);
+            HideMenu();
         }
+    }
+
+    private void HideMenu()
+    {
+        Debug.Log("Gömmer rutan");
+        _timeLeft = ShowWindowDelay;
+        _currentStatus = CurrentStatus.Idle;
+        _exitedCount = 0;
+        AdjustmentWindow.SetActive(false);
     }
 }
