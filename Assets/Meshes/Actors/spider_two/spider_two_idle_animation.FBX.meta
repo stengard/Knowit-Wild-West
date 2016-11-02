@@ -1,0 +1,783 @@
+fileFormatVersion: 2
+guid: fef65ca8f6476bb47bf86563def6ce26
+timeCreated: 1478100918
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: B Abdomen
+    100002: B Body
+    100004: B Head
+    100006: B Leg L1 A
+    100008: B Leg L1 B
+    100010: B Leg L1 C
+    100012: B Leg L1 D
+    100014: B Leg L1 E
+    100016: B Leg L1 end
+    100018: B Leg L1 F
+    100020: B Leg L2 A
+    100022: B Leg L2 B
+    100024: B Leg L2 C
+    100026: B Leg L2 D
+    100028: B Leg L2 E
+    100030: B Leg L2 end
+    100032: B Leg L2 F
+    100034: B Leg L3 A
+    100036: B Leg L3 B
+    100038: B Leg L3 C
+    100040: B Leg L3 D
+    100042: B Leg L3 E
+    100044: B Leg L3 end
+    100046: B Leg L3 F
+    100048: B Leg L4 A
+    100050: B Leg L4 B
+    100052: B Leg L4 C
+    100054: B Leg L4 D
+    100056: B Leg L4 E
+    100058: B Leg L4 end
+    100060: B Leg L4 F
+    100062: B Leg R1 A
+    100064: B Leg R1 B
+    100066: B Leg R1 C
+    100068: B Leg R1 D
+    100070: B Leg R1 E
+    100072: B Leg R1 end
+    100074: B Leg R1 F
+    100076: B Leg R2 A
+    100078: B Leg R2 B
+    100080: B Leg R2 C
+    100082: B Leg R2 D
+    100084: B Leg R2 E
+    100086: B Leg R2 end
+    100088: B Leg R2 F
+    100090: B Leg R3 A
+    100092: B Leg R3 B
+    100094: B Leg R3 C
+    100096: B Leg R3 D
+    100098: B Leg R3 E
+    100100: B Leg R3 end
+    100102: B Leg R3 F
+    100104: B Leg R4 A
+    100106: B Leg R4 B
+    100108: B Leg R4 C
+    100110: B Leg R4 D
+    100112: B Leg R4 E
+    100114: B Leg R4 end
+    100116: B Leg R4 F
+    100118: B Mandible L
+    100120: B Mandible R
+    100122: B Palpus L A
+    100124: B Palpus L B
+    100126: B Palpus L C
+    100128: B Palpus L D
+    100130: B Palpus R A
+    100132: B Palpus R B
+    100134: B Palpus R C
+    100136: B Palpus R D
+    100138: Body
+    100140: Ctrl Attach Body
+    100142: Ctrl Attach leg01
+    100144: Ctrl Attach leg02
+    100146: Ctrl Attach leg03
+    100148: Ctrl Attach leg04
+    100150: Ctrl Attach leg05
+    100152: Ctrl Attach leg06
+    100154: Ctrl Conform
+    100156: Ctrl ConformPlane Body
+    100158: Ctrl Spider Main
+    100160: Ctrl Spider Path
+    100162: Head
+    100164: IK Leg  L04
+    100166: IK Leg  L1
+    100168: IK Leg  L2
+    100170: IK Leg  L3
+    100172: IK Leg  R1
+    100174: IK Leg  R2
+    100176: IK Leg  R3
+    100178: IK Leg  R4
+    100180: Leg L 01
+    100182: Leg L 02
+    100184: Leg L 03
+    100186: Leg L 04
+    100188: Leg R 01
+    100190: Leg R 02
+    100192: Leg R 03
+    100194: Leg R 04
+    100196: Mandible L
+    100198: Mandible R
+    100200: Palpus L
+    100202: Palpus R
+    100204: //RootNode
+    400000: B Abdomen
+    400002: B Body
+    400004: B Head
+    400006: B Leg L1 A
+    400008: B Leg L1 B
+    400010: B Leg L1 C
+    400012: B Leg L1 D
+    400014: B Leg L1 E
+    400016: B Leg L1 end
+    400018: B Leg L1 F
+    400020: B Leg L2 A
+    400022: B Leg L2 B
+    400024: B Leg L2 C
+    400026: B Leg L2 D
+    400028: B Leg L2 E
+    400030: B Leg L2 end
+    400032: B Leg L2 F
+    400034: B Leg L3 A
+    400036: B Leg L3 B
+    400038: B Leg L3 C
+    400040: B Leg L3 D
+    400042: B Leg L3 E
+    400044: B Leg L3 end
+    400046: B Leg L3 F
+    400048: B Leg L4 A
+    400050: B Leg L4 B
+    400052: B Leg L4 C
+    400054: B Leg L4 D
+    400056: B Leg L4 E
+    400058: B Leg L4 end
+    400060: B Leg L4 F
+    400062: B Leg R1 A
+    400064: B Leg R1 B
+    400066: B Leg R1 C
+    400068: B Leg R1 D
+    400070: B Leg R1 E
+    400072: B Leg R1 end
+    400074: B Leg R1 F
+    400076: B Leg R2 A
+    400078: B Leg R2 B
+    400080: B Leg R2 C
+    400082: B Leg R2 D
+    400084: B Leg R2 E
+    400086: B Leg R2 end
+    400088: B Leg R2 F
+    400090: B Leg R3 A
+    400092: B Leg R3 B
+    400094: B Leg R3 C
+    400096: B Leg R3 D
+    400098: B Leg R3 E
+    400100: B Leg R3 end
+    400102: B Leg R3 F
+    400104: B Leg R4 A
+    400106: B Leg R4 B
+    400108: B Leg R4 C
+    400110: B Leg R4 D
+    400112: B Leg R4 E
+    400114: B Leg R4 end
+    400116: B Leg R4 F
+    400118: B Mandible L
+    400120: B Mandible R
+    400122: B Palpus L A
+    400124: B Palpus L B
+    400126: B Palpus L C
+    400128: B Palpus L D
+    400130: B Palpus R A
+    400132: B Palpus R B
+    400134: B Palpus R C
+    400136: B Palpus R D
+    400138: Body
+    400140: Ctrl Attach Body
+    400142: Ctrl Attach leg01
+    400144: Ctrl Attach leg02
+    400146: Ctrl Attach leg03
+    400148: Ctrl Attach leg04
+    400150: Ctrl Attach leg05
+    400152: Ctrl Attach leg06
+    400154: Ctrl Conform
+    400156: Ctrl ConformPlane Body
+    400158: Ctrl Spider Main
+    400160: Ctrl Spider Path
+    400162: Head
+    400164: IK Leg  L04
+    400166: IK Leg  L1
+    400168: IK Leg  L2
+    400170: IK Leg  L3
+    400172: IK Leg  R1
+    400174: IK Leg  R2
+    400176: IK Leg  R3
+    400178: IK Leg  R4
+    400180: Leg L 01
+    400182: Leg L 02
+    400184: Leg L 03
+    400186: Leg L 04
+    400188: Leg R 01
+    400190: Leg R 02
+    400192: Leg R 03
+    400194: Leg R 04
+    400196: Mandible L
+    400198: Mandible R
+    400200: Palpus L
+    400202: Palpus R
+    400204: //RootNode
+    2300000: B Abdomen
+    2300002: B Body
+    2300004: B Head
+    2300006: B Leg L1 A
+    2300008: B Leg L1 B
+    2300010: B Leg L1 C
+    2300012: B Leg L1 D
+    2300014: B Leg L1 E
+    2300016: B Leg L1 end
+    2300018: B Leg L1 F
+    2300020: B Leg L2 A
+    2300022: B Leg L2 B
+    2300024: B Leg L2 C
+    2300026: B Leg L2 D
+    2300028: B Leg L2 E
+    2300030: B Leg L2 end
+    2300032: B Leg L2 F
+    2300034: B Leg L3 A
+    2300036: B Leg L3 B
+    2300038: B Leg L3 C
+    2300040: B Leg L3 D
+    2300042: B Leg L3 E
+    2300044: B Leg L3 end
+    2300046: B Leg L3 F
+    2300048: B Leg L4 A
+    2300050: B Leg L4 B
+    2300052: B Leg L4 C
+    2300054: B Leg L4 D
+    2300056: B Leg L4 E
+    2300058: B Leg L4 end
+    2300060: B Leg L4 F
+    2300062: B Leg R1 A
+    2300064: B Leg R1 B
+    2300066: B Leg R1 C
+    2300068: B Leg R1 D
+    2300070: B Leg R1 E
+    2300072: B Leg R1 end
+    2300074: B Leg R1 F
+    2300076: B Leg R2 A
+    2300078: B Leg R2 B
+    2300080: B Leg R2 C
+    2300082: B Leg R2 D
+    2300084: B Leg R2 E
+    2300086: B Leg R2 end
+    2300088: B Leg R2 F
+    2300090: B Leg R3 A
+    2300092: B Leg R3 B
+    2300094: B Leg R3 C
+    2300096: B Leg R3 D
+    2300098: B Leg R3 E
+    2300100: B Leg R3 end
+    2300102: B Leg R3 F
+    2300104: B Leg R4 A
+    2300106: B Leg R4 B
+    2300108: B Leg R4 C
+    2300110: B Leg R4 D
+    2300112: B Leg R4 E
+    2300114: B Leg R4 end
+    2300116: B Leg R4 F
+    2300118: B Mandible L
+    2300120: B Mandible R
+    2300122: B Palpus L A
+    2300124: B Palpus L B
+    2300126: B Palpus L C
+    2300128: B Palpus L D
+    2300130: B Palpus R A
+    2300132: B Palpus R B
+    2300134: B Palpus R C
+    2300136: B Palpus R D
+    2300138: Body
+    2300140: Ctrl ConformPlane Body
+    2300142: Head
+    2300144: Mandible L
+    2300146: Mandible R
+    3300000: B Abdomen
+    3300002: B Body
+    3300004: B Head
+    3300006: B Leg L1 A
+    3300008: B Leg L1 B
+    3300010: B Leg L1 C
+    3300012: B Leg L1 D
+    3300014: B Leg L1 E
+    3300016: B Leg L1 end
+    3300018: B Leg L1 F
+    3300020: B Leg L2 A
+    3300022: B Leg L2 B
+    3300024: B Leg L2 C
+    3300026: B Leg L2 D
+    3300028: B Leg L2 E
+    3300030: B Leg L2 end
+    3300032: B Leg L2 F
+    3300034: B Leg L3 A
+    3300036: B Leg L3 B
+    3300038: B Leg L3 C
+    3300040: B Leg L3 D
+    3300042: B Leg L3 E
+    3300044: B Leg L3 end
+    3300046: B Leg L3 F
+    3300048: B Leg L4 A
+    3300050: B Leg L4 B
+    3300052: B Leg L4 C
+    3300054: B Leg L4 D
+    3300056: B Leg L4 E
+    3300058: B Leg L4 end
+    3300060: B Leg L4 F
+    3300062: B Leg R1 A
+    3300064: B Leg R1 B
+    3300066: B Leg R1 C
+    3300068: B Leg R1 D
+    3300070: B Leg R1 E
+    3300072: B Leg R1 end
+    3300074: B Leg R1 F
+    3300076: B Leg R2 A
+    3300078: B Leg R2 B
+    3300080: B Leg R2 C
+    3300082: B Leg R2 D
+    3300084: B Leg R2 E
+    3300086: B Leg R2 end
+    3300088: B Leg R2 F
+    3300090: B Leg R3 A
+    3300092: B Leg R3 B
+    3300094: B Leg R3 C
+    3300096: B Leg R3 D
+    3300098: B Leg R3 E
+    3300100: B Leg R3 end
+    3300102: B Leg R3 F
+    3300104: B Leg R4 A
+    3300106: B Leg R4 B
+    3300108: B Leg R4 C
+    3300110: B Leg R4 D
+    3300112: B Leg R4 E
+    3300114: B Leg R4 end
+    3300116: B Leg R4 F
+    3300118: B Mandible L
+    3300120: B Mandible R
+    3300122: B Palpus L A
+    3300124: B Palpus L B
+    3300126: B Palpus L C
+    3300128: B Palpus L D
+    3300130: B Palpus R A
+    3300132: B Palpus R B
+    3300134: B Palpus R C
+    3300136: B Palpus R D
+    3300138: Body
+    3300140: Ctrl ConformPlane Body
+    3300142: Head
+    3300144: Mandible L
+    3300146: Mandible R
+    4300000: Ctrl ConformPlane Body
+    4300002: B Body
+    4300004: B Abdomen
+    4300006: Body
+    4300008: B Head
+    4300010: B Palpus L A
+    4300012: B Palpus L B
+    4300014: B Palpus L C
+    4300016: B Palpus L D
+    4300018: B Mandible R
+    4300020: Mandible R
+    4300022: B Mandible L
+    4300024: Mandible L
+    4300026: B Palpus R A
+    4300028: B Palpus R B
+    4300030: B Palpus R C
+    4300032: B Palpus R D
+    4300034: Head
+    4300036: B Leg L1 A
+    4300038: B Leg L1 B
+    4300040: B Leg L1 C
+    4300042: B Leg L1 D
+    4300044: B Leg L1 E
+    4300046: B Leg L1 F
+    4300048: B Leg L1 end
+    4300050: B Leg L2 A
+    4300052: B Leg L2 B
+    4300054: B Leg L2 C
+    4300056: B Leg L2 D
+    4300058: B Leg L2 E
+    4300060: B Leg L2 F
+    4300062: B Leg L2 end
+    4300064: B Leg L3 A
+    4300066: B Leg L3 B
+    4300068: B Leg L3 C
+    4300070: B Leg L3 D
+    4300072: B Leg L3 E
+    4300074: B Leg L3 F
+    4300076: B Leg L3 end
+    4300078: B Leg L4 A
+    4300080: B Leg L4 B
+    4300082: B Leg L4 C
+    4300084: B Leg L4 D
+    4300086: B Leg L4 E
+    4300088: B Leg L4 F
+    4300090: B Leg L4 end
+    4300092: B Leg R3 A
+    4300094: B Leg R3 B
+    4300096: B Leg R3 C
+    4300098: B Leg R3 D
+    4300100: B Leg R3 E
+    4300102: B Leg R3 F
+    4300104: B Leg R3 end
+    4300106: B Leg R2 A
+    4300108: B Leg R2 B
+    4300110: B Leg R2 C
+    4300112: B Leg R2 D
+    4300114: B Leg R2 E
+    4300116: B Leg R2 F
+    4300118: B Leg R2 end
+    4300120: B Leg R1 A
+    4300122: B Leg R1 B
+    4300124: B Leg R1 C
+    4300126: B Leg R1 D
+    4300128: B Leg R1 E
+    4300130: B Leg R1 F
+    4300132: B Leg R1 end
+    4300134: B Leg R4 A
+    4300136: B Leg R4 B
+    4300138: B Leg R4 C
+    4300140: B Leg R4 D
+    4300142: B Leg R4 E
+    4300144: B Leg R4 F
+    4300146: B Leg R4 end
+    4300148: Leg R 04
+    4300150: Leg R 03
+    4300152: Leg R 02
+    4300154: Leg R 01
+    4300156: Leg L 04
+    4300158: Leg L 03
+    4300160: Leg L 02
+    4300162: Leg L 01
+    4300164: Palpus R
+    4300166: Palpus L
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Leg L 01
+    13700002: Leg L 02
+    13700004: Leg L 03
+    13700006: Leg L 04
+    13700008: Leg R 01
+    13700010: Leg R 02
+    13700012: Leg R 03
+    13700014: Leg R 04
+    13700016: Palpus L
+    13700018: Palpus R
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Ctrl Attach Body
+        weight: 1
+      - path: Ctrl Attach Body/B Body
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Abdomen
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Abdomen/Body
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Head
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Head/B Mandible L
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Head/B Mandible L/Mandible L
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Head/B Mandible R
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Head/B Mandible R/Mandible R
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Head/B Palpus L A
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Head/B Palpus L A/B Palpus L B
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Head/B Palpus L A/B Palpus L B/B Palpus L
+          C
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Head/B Palpus L A/B Palpus L B/B Palpus L
+          C/B Palpus L D
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Head/B Palpus R A
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Head/B Palpus R A/B Palpus R B
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Head/B Palpus R A/B Palpus R B/B Palpus R
+          C
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Head/B Palpus R A/B Palpus R B/B Palpus R
+          C/B Palpus R D
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Head/Head
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg L1 A
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg L1 A/B Leg L1 B
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg L1 A/B Leg L1 B/B Leg L1 C
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg L1 A/B Leg L1 B/B Leg L1 C/B Leg L1 D
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg L1 A/B Leg L1 B/B Leg L1 C/B Leg L1 D/B
+          Leg L1 E
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg L1 A/B Leg L1 B/B Leg L1 C/B Leg L1 D/B
+          Leg L1 E/B Leg L1 F
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg L1 A/B Leg L1 B/B Leg L1 C/B Leg L1 D/B
+          Leg L1 E/B Leg L1 F/B Leg L1 end
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg L2 A
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg L2 A/B Leg L2 B
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg L2 A/B Leg L2 B/B Leg L2 C
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg L2 A/B Leg L2 B/B Leg L2 C/B Leg L2 D
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg L2 A/B Leg L2 B/B Leg L2 C/B Leg L2 D/B
+          Leg L2 E
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg L2 A/B Leg L2 B/B Leg L2 C/B Leg L2 D/B
+          Leg L2 E/B Leg L2 F
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg L2 A/B Leg L2 B/B Leg L2 C/B Leg L2 D/B
+          Leg L2 E/B Leg L2 F/B Leg L2 end
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg L3 A
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg L3 A/B Leg L3 B
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg L3 A/B Leg L3 B/B Leg L3 C
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg L3 A/B Leg L3 B/B Leg L3 C/B Leg L3 D
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg L3 A/B Leg L3 B/B Leg L3 C/B Leg L3 D/B
+          Leg L3 E
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg L3 A/B Leg L3 B/B Leg L3 C/B Leg L3 D/B
+          Leg L3 E/B Leg L3 F
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg L3 A/B Leg L3 B/B Leg L3 C/B Leg L3 D/B
+          Leg L3 E/B Leg L3 F/B Leg L3 end
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg L4 A
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg L4 A/B Leg L4 B
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg L4 A/B Leg L4 B/B Leg L4 C
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg L4 A/B Leg L4 B/B Leg L4 C/B Leg L4 D
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg L4 A/B Leg L4 B/B Leg L4 C/B Leg L4 D/B
+          Leg L4 E
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg L4 A/B Leg L4 B/B Leg L4 C/B Leg L4 D/B
+          Leg L4 E/B Leg L4 F
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg L4 A/B Leg L4 B/B Leg L4 C/B Leg L4 D/B
+          Leg L4 E/B Leg L4 F/B Leg L4 end
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg R1 A
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg R1 A/B Leg R1 B
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg R1 A/B Leg R1 B/B Leg R1 C
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg R1 A/B Leg R1 B/B Leg R1 C/B Leg R1 D
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg R1 A/B Leg R1 B/B Leg R1 C/B Leg R1 D/B
+          Leg R1 E
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg R1 A/B Leg R1 B/B Leg R1 C/B Leg R1 D/B
+          Leg R1 E/B Leg R1 F
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg R1 A/B Leg R1 B/B Leg R1 C/B Leg R1 D/B
+          Leg R1 E/B Leg R1 F/B Leg R1 end
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg R2 A
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg R2 A/B Leg R2 B
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg R2 A/B Leg R2 B/B Leg R2 C
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg R2 A/B Leg R2 B/B Leg R2 C/B Leg R2 D
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg R2 A/B Leg R2 B/B Leg R2 C/B Leg R2 D/B
+          Leg R2 E
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg R2 A/B Leg R2 B/B Leg R2 C/B Leg R2 D/B
+          Leg R2 E/B Leg R2 F
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg R2 A/B Leg R2 B/B Leg R2 C/B Leg R2 D/B
+          Leg R2 E/B Leg R2 F/B Leg R2 end
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg R3 A
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg R3 A/B Leg R3 B
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg R3 A/B Leg R3 B/B Leg R3 C
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg R3 A/B Leg R3 B/B Leg R3 C/B Leg R3 D
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg R3 A/B Leg R3 B/B Leg R3 C/B Leg R3 D/B
+          Leg R3 E
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg R3 A/B Leg R3 B/B Leg R3 C/B Leg R3 D/B
+          Leg R3 E/B Leg R3 F
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg R3 A/B Leg R3 B/B Leg R3 C/B Leg R3 D/B
+          Leg R3 E/B Leg R3 F/B Leg R3 end
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg R4 A
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg R4 A/B Leg R4 B
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg R4 A/B Leg R4 B/B Leg R4 C
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg R4 A/B Leg R4 B/B Leg R4 C/B Leg R4 D
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg R4 A/B Leg R4 B/B Leg R4 C/B Leg R4 D/B
+          Leg R4 E
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg R4 A/B Leg R4 B/B Leg R4 C/B Leg R4 D/B
+          Leg R4 E/B Leg R4 F
+        weight: 1
+      - path: Ctrl Attach Body/B Body/B Leg R4 A/B Leg R4 B/B Leg R4 C/B Leg R4 D/B
+          Leg R4 E/B Leg R4 F/B Leg R4 end
+        weight: 1
+      - path: Ctrl Attach leg01
+        weight: 1
+      - path: Ctrl Attach leg01/IK Leg  R1
+        weight: 1
+      - path: Ctrl Attach leg02
+        weight: 1
+      - path: Ctrl Attach leg02/IK Leg  L1
+        weight: 1
+      - path: Ctrl Attach leg03
+        weight: 1
+      - path: Ctrl Attach leg03/IK Leg  R4
+        weight: 1
+      - path: Ctrl Attach leg04
+        weight: 1
+      - path: Ctrl Attach leg04/IK Leg  L04
+        weight: 1
+      - path: Ctrl Attach leg05
+        weight: 1
+      - path: Ctrl Attach leg05/IK Leg  R2
+        weight: 1
+      - path: Ctrl Attach leg05/IK Leg  R3
+        weight: 1
+      - path: Ctrl Attach leg06
+        weight: 1
+      - path: Ctrl Attach leg06/IK Leg  L2
+        weight: 1
+      - path: Ctrl Attach leg06/IK Leg  L3
+        weight: 1
+      - path: Ctrl Conform
+        weight: 1
+      - path: Ctrl Spider Main
+        weight: 1
+      - path: Ctrl Spider Main/Ctrl ConformPlane Body
+        weight: 1
+      - path: Ctrl Spider Path
+        weight: 1
+      - path: Leg L 01
+        weight: 1
+      - path: Leg L 02
+        weight: 1
+      - path: Leg L 03
+        weight: 1
+      - path: Leg L 04
+        weight: 1
+      - path: Leg R 01
+        weight: 1
+      - path: Leg R 02
+        weight: 1
+      - path: Leg R 03
+        weight: 1
+      - path: Leg R 04
+        weight: 1
+      - path: Palpus L
+        weight: 1
+      - path: Palpus R
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
