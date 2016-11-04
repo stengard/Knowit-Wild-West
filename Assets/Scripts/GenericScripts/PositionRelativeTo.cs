@@ -43,6 +43,8 @@ public class PositionRelativeTo : MonoBehaviour
 
     IEnumerator RotateObject(Transform thisTransform, Quaternion startRotation, Quaternion endRotation, float time)
     {
+        Vector3 targetPoint = new Vector3(Camera.main.transform.position.x, transform.position.y, Camera.main.transform.position.z) - transform.position;
+        endRotation = Quaternion.LookRotation(-targetPoint, Vector3.up);
         thisTransform.rotation = Quaternion.Lerp(startRotation, endRotation, Time.deltaTime);
         yield return 0;
     }

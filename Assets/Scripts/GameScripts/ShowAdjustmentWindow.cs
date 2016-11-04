@@ -20,7 +20,6 @@ public class ShowAdjustmentWindow : MonoBehaviour
     public bool ShowOnKeyWord = true;
 
     private float _timeLeft;
-    private bool _gazeHasEnteredObject = false;
     private CurrentStatus _currentStatus;
     private int _exitedCount;
 
@@ -47,20 +46,22 @@ public class ShowAdjustmentWindow : MonoBehaviour
 
     public void ShowMenuRecognized()
     {
-        if (!ShowOnKeyWord) return;
-
-        var focusObject = GestureManager.Instance.FocusedObject;
-
-        if (focusObject == gameObject)
+        if (ShowOnKeyWord)
         {
-            if (_currentStatus == CurrentStatus.Idle)
-            {
-                _currentStatus = CurrentStatus.WaitingForDelay;
 
-            }
-            else
+            var focusObject = GestureManager.Instance.FocusedObject;
+
+            if (focusObject == gameObject)
             {
-                HideMenu();
+                if (_currentStatus == CurrentStatus.Idle)
+                {
+                    _currentStatus = CurrentStatus.WaitingForDelay;
+
+                }
+                else
+                {
+                    HideMenu();
+                }
             }
         }
     }
@@ -68,18 +69,23 @@ public class ShowAdjustmentWindow : MonoBehaviour
 
     void OnGazeEnter()
     {
-        if (!ShowOnGaze) return;
-        _currentStatus = CurrentStatus.WaitingForDelay;
+        if (ShowOnGaze)
+        {
+            _currentStatus = CurrentStatus.WaitingForDelay;
+        }
     }
 
     void OnGazeLeave()
     {
-        if (!ShowOnGaze) return;
-        _exitedCount++;
-        if (_exitedCount > 1)
+        if (ShowOnGaze)
         {
-            HideMenu();
+            _exitedCount++;
+            if (_exitedCount > 1)
+            {
+                HideMenu();
+            }
         }
+
     }
 
     private void HideMenu()
