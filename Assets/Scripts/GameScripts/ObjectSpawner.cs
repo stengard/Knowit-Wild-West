@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Assets;
+using UnityEngine.EventSystems;
 
 public class ObjectSpawner : MonoBehaviour
 {
@@ -24,6 +25,11 @@ public class ObjectSpawner : MonoBehaviour
         {
             Debug.LogError("You need to have a game object attached to the scipt so what we can spawn it for you");
         }
+
+        if (ParentToSpawnOn == null)
+        {
+            ParentToSpawnOn = GameObject.Find("Items");
+        }
     }
 
 
@@ -35,7 +41,7 @@ public class ObjectSpawner : MonoBehaviour
         }
     }
 
-    void OnSelect()
+    void OnSelected()
     {
         if (SpawnOnTap)
         {
@@ -55,22 +61,6 @@ public class ObjectSpawner : MonoBehaviour
         float sizeToAdd = Random.Range(MinSizeAdd, MaxSizeAdd);
         _spawnedGameObject.transform.localScale += new Vector3(sizeToAdd, sizeToAdd, sizeToAdd);
         _spawnedGameObject.transform.parent = ParentToSpawnOn.transform;
-        //float spawnerSize = transform.GetComponent<Collider>().bounds.size.y;
-        //float objectSize = spawnedObject.GetComponent<Collider>().bounds.size.y;
-        //Debug.Log(spawnerSize + " " + objectSize);
-        //float offset = objectSize*2 + (spawnerSize/2);
-        //Debug.Log(offset);
-
-        //spawnedObject.GetComponent<Renderer>().enabled = false;
-        ////spawnedObject.GetComponent<Collider>().enabled = false;
-        //spawnedObject.GetComponent<Collider>().enabled = true;
-
-        //Vector3 spawnPosition = new Vector3(transform.position.x, transform.position.y + offset, transform.position.z);
-        //spawnedObject.GetComponent<Renderer>().enabled = true;
-        //Debug.Log(spawnPosition);
-
-        //spawnedObject.transform.position = spawnPosition;
-
     }
 
 

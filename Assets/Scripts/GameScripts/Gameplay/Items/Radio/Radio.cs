@@ -30,7 +30,7 @@ namespace Assets.Scripts.GameScripts.Gameplay.Items.Radio
             _isPlaying = _audioSource.isPlaying;
         }
 
-        void OnSelect()
+        void OnSelected()
         {
             //_isPlaying = !_isPlaying;
             //PlayOrPause();

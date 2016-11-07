@@ -84,7 +84,7 @@ namespace Assets.Scripts.GenericScripts
             }
         }
 
-        void OnSelect()
+        void OnSelected()
         {
             if (ExplodeOnTap && !_hasBeenPlayed)
             {

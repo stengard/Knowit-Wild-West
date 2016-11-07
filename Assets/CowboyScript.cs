@@ -10,7 +10,7 @@ public class CowboyScript : MonoBehaviour {
         _animator = GetComponent<Animator>();
     }
 
-    void OnSelect()
+    void OnSelected()
     {
         //Debug.Log("Klickade Cowboy");
         //_animator.Play("stand_still_idle");

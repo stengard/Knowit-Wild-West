@@ -5869,7 +5869,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc7deb44062738448a826d2b0b669024, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpinOnStart: 1
+  SpinOnStart: 0
   RotationSpeed: 200
 --- !u!114 &114000013188659232
 MonoBehaviour:

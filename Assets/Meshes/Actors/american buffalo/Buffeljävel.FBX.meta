@@ -1,0 +1,411 @@
+fileFormatVersion: 2
+guid: d62494b919fc96e4e82997b52654a932
+timeCreated: 1478509599
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bone002
+    100002: Bone003
+    100004: Bone004
+    100006: Bone005
+    100008: Bone008
+    100010: Bone009
+    100012: Bone010
+    100014: Bone011
+    100016: Bone013
+    100018: Bone014
+    100020: Bone016
+    100022: Bone017
+    100024: Bone018
+    100026: Bone021
+    100028: Bone022
+    100030: Bone023
+    100032: Bone024
+    100034: Bone025
+    100036: Bone033
+    100038: Bone034
+    100040: Bone035
+    100042: Bone039
+    100044: Bone040
+    100046: Bone041
+    100048: Bone042
+    100050: Bone043
+    100052: Bone044
+    100054: Bone045
+    100056: Bone046
+    100058: Bone047
+    100060: Bone048
+    100062: Bone049
+    100064: Bone050
+    100066: Bone051
+    100068: Bone052
+    100070: Buffalo
+    100072: //RootNode
+    100074: Fight
+    100076: Galloping
+    100078: Head
+    100080: Line002
+    100082: Line003
+    100084: Line005
+    100086: Line006
+    100088: Line007
+    100090: Line008
+    100092: Line009
+    100094: Line010
+    100096: Line011
+    100098: Line012
+    100100: Neck
+    100102: Pelvis_L
+    100104: Pelvis_R
+    100106: Plane005
+    100108: Plane006
+    100110: Point001
+    100112: Point002
+    100114: Point003
+    100116: Point004
+    100118: Point005
+    100120: Point006
+    100122: Point007
+    100124: RibCage
+    100126: Root
+    100128: Scapula_L
+    100130: Scapula_R
+    100132: Size
+    100134: Sky001
+    100136: Spine
+    100138: Tail
+    100140: Walking
+    400000: Bone002
+    400002: Bone003
+    400004: Bone004
+    400006: Bone005
+    400008: Bone008
+    400010: Bone009
+    400012: Bone010
+    400014: Bone011
+    400016: Bone013
+    400018: Bone014
+    400020: Bone016
+    400022: Bone017
+    400024: Bone018
+    400026: Bone021
+    400028: Bone022
+    400030: Bone023
+    400032: Bone024
+    400034: Bone025
+    400036: Bone033
+    400038: Bone034
+    400040: Bone035
+    400042: Bone039
+    400044: Bone040
+    400046: Bone041
+    400048: Bone042
+    400050: Bone043
+    400052: Bone044
+    400054: Bone045
+    400056: Bone046
+    400058: Bone047
+    400060: Bone048
+    400062: Bone049
+    400064: Bone050
+    400066: Bone051
+    400068: Bone052
+    400070: Buffalo
+    400072: //RootNode
+    400074: Fight
+    400076: Galloping
+    400078: Head
+    400080: Line002
+    400082: Line003
+    400084: Line005
+    400086: Line006
+    400088: Line007
+    400090: Line008
+    400092: Line009
+    400094: Line010
+    400096: Line011
+    400098: Line012
+    400100: Neck
+    400102: Pelvis_L
+    400104: Pelvis_R
+    400106: Plane005
+    400108: Plane006
+    400110: Point001
+    400112: Point002
+    400114: Point003
+    400116: Point004
+    400118: Point005
+    400120: Point006
+    400122: Point007
+    400124: RibCage
+    400126: Root
+    400128: Scapula_L
+    400130: Scapula_R
+    400132: Size
+    400134: Sky001
+    400136: Spine
+    400138: Tail
+    400140: Walking
+    2300000: Fight
+    2300002: Galloping
+    2300004: Plane005
+    2300006: Plane006
+    2300008: Size
+    2300010: Walking
+    3300000: Fight
+    3300002: Galloping
+    3300004: Plane005
+    3300006: Plane006
+    3300008: Size
+    3300010: Walking
+    4300000: Buffalo
+    4300002: Size
+    4300004: Plane005
+    4300006: Galloping
+    4300008: Walking
+    4300010: Fight
+    4300012: Plane006
+    6400000: Fight
+    6400002: Galloping
+    6400004: Plane005
+    6400006: Plane006
+    6400008: Size
+    6400010: Walking
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Buffalo
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 286
+      lastFrame: 456
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Buffalo
+        weight: 1
+      - path: Fight
+        weight: 1
+      - path: Galloping
+        weight: 1
+      - path: Line002
+        weight: 1
+      - path: Line003
+        weight: 1
+      - path: Line005
+        weight: 1
+      - path: Line006
+        weight: 1
+      - path: Line007
+        weight: 1
+      - path: Line008
+        weight: 1
+      - path: Line009
+        weight: 1
+      - path: Line010
+        weight: 1
+      - path: Line011
+        weight: 1
+      - path: Line012
+        weight: 1
+      - path: Plane005
+        weight: 1
+      - path: Plane006
+        weight: 1
+      - path: Point001
+        weight: 1
+      - path: Point001/Root
+        weight: 1
+      - path: Point001/Root/Pelvis_L
+        weight: 1
+      - path: Point001/Root/Pelvis_L/Bone021
+        weight: 1
+      - path: Point001/Root/Pelvis_L/Bone021/Bone022
+        weight: 1
+      - path: Point001/Root/Pelvis_L/Bone021/Bone022/Bone023
+        weight: 1
+      - path: Point001/Root/Pelvis_L/Bone021/Bone022/Bone023/Bone024
+        weight: 1
+      - path: Point001/Root/Pelvis_L/Bone021/Bone022/Bone023/Bone024/Bone025
+        weight: 1
+      - path: Point001/Root/Pelvis_R
+        weight: 1
+      - path: Point001/Root/Pelvis_R/Bone002
+        weight: 1
+      - path: Point001/Root/Pelvis_R/Bone002/Bone003
+        weight: 1
+      - path: Point001/Root/Pelvis_R/Bone002/Bone003/Bone004
+        weight: 1
+      - path: Point001/Root/Pelvis_R/Bone002/Bone003/Bone004/Bone005
+        weight: 1
+      - path: Point001/Root/Pelvis_R/Bone002/Bone003/Bone004/Bone005/Bone014
+        weight: 1
+      - path: Point001/Root/Spine
+        weight: 1
+      - path: Point001/Root/Spine/Bone016
+        weight: 1
+      - path: Point001/Root/Spine/Bone016/Bone017
+        weight: 1
+      - path: Point001/Root/Spine/Bone016/Bone017/Bone018
+        weight: 1
+      - path: Point001/Root/Spine/Bone016/Bone017/Bone018/RibCage
+        weight: 1
+      - path: Point001/Root/Spine/Bone016/Bone017/Bone018/RibCage/Neck
+        weight: 1
+      - path: Point001/Root/Spine/Bone016/Bone017/Bone018/RibCage/Neck/Bone033
+        weight: 1
+      - path: Point001/Root/Spine/Bone016/Bone017/Bone018/RibCage/Neck/Bone033/Bone034
+        weight: 1
+      - path: Point001/Root/Spine/Bone016/Bone017/Bone018/RibCage/Neck/Bone033/Bone034/Bone035
+        weight: 1
+      - path: Point001/Root/Spine/Bone016/Bone017/Bone018/RibCage/Neck/Bone033/Bone034/Bone035/Head
+        weight: 1
+      - path: Point001/Root/Spine/Bone016/Bone017/Bone018/RibCage/Scapula_L
+        weight: 1
+      - path: Point001/Root/Spine/Bone016/Bone017/Bone018/RibCage/Scapula_L/Bone048
+        weight: 1
+      - path: Point001/Root/Spine/Bone016/Bone017/Bone018/RibCage/Scapula_L/Bone048/Bone049
+        weight: 1
+      - path: Point001/Root/Spine/Bone016/Bone017/Bone018/RibCage/Scapula_L/Bone048/Bone049/Bone050
+        weight: 1
+      - path: Point001/Root/Spine/Bone016/Bone017/Bone018/RibCage/Scapula_L/Bone048/Bone049/Bone050/Bone051
+        weight: 1
+      - path: Point001/Root/Spine/Bone016/Bone017/Bone018/RibCage/Scapula_L/Bone048/Bone049/Bone050/Bone051/Bone052
+        weight: 1
+      - path: Point001/Root/Spine/Bone016/Bone017/Bone018/RibCage/Scapula_R
+        weight: 1
+      - path: Point001/Root/Spine/Bone016/Bone017/Bone018/RibCage/Scapula_R/Bone008
+        weight: 1
+      - path: Point001/Root/Spine/Bone016/Bone017/Bone018/RibCage/Scapula_R/Bone008/Bone009
+        weight: 1
+      - path: Point001/Root/Spine/Bone016/Bone017/Bone018/RibCage/Scapula_R/Bone008/Bone009/Bone010
+        weight: 1
+      - path: Point001/Root/Spine/Bone016/Bone017/Bone018/RibCage/Scapula_R/Bone008/Bone009/Bone010/Bone013
+        weight: 1
+      - path: Point001/Root/Spine/Bone016/Bone017/Bone018/RibCage/Scapula_R/Bone008/Bone009/Bone010/Bone013/Bone011
+        weight: 1
+      - path: Point001/Root/Tail
+        weight: 1
+      - path: Point001/Root/Tail/Bone039
+        weight: 1
+      - path: Point001/Root/Tail/Bone039/Bone040
+        weight: 1
+      - path: Point001/Root/Tail/Bone039/Bone040/Bone041
+        weight: 1
+      - path: Point001/Root/Tail/Bone039/Bone040/Bone041/Bone047
+        weight: 1
+      - path: Point001/Root/Tail/Bone039/Bone040/Bone041/Bone047/Bone042
+        weight: 1
+      - path: Point001/Root/Tail/Bone039/Bone040/Bone041/Bone047/Bone042/Bone046
+        weight: 1
+      - path: Point001/Root/Tail/Bone039/Bone040/Bone041/Bone047/Bone042/Bone046/Bone043
+        weight: 1
+      - path: Point001/Root/Tail/Bone039/Bone040/Bone041/Bone047/Bone042/Bone046/Bone043/Bone045
+        weight: 1
+      - path: Point001/Root/Tail/Bone039/Bone040/Bone041/Bone047/Bone042/Bone046/Bone043/Bone045/Bone044
+        weight: 1
+      - path: Point002
+        weight: 1
+      - path: Point003
+        weight: 1
+      - path: Point004
+        weight: 1
+      - path: Point005
+        weight: 1
+      - path: Point006
+        weight: 1
+      - path: Point007
+        weight: 1
+      - path: Size
+        weight: 1
+      - path: Sky001
+        weight: 1
+      - path: Walking
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.3
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

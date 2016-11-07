@@ -6,7 +6,7 @@ public class CallFunctionOnTap : MonoBehaviour {
 
     public UnityEvent Response;
 
-    void OnSelect()
+    void OnSelected()
     {
         Response.Invoke();
     }
