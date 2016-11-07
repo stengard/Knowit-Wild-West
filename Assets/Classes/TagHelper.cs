@@ -10,5 +10,6 @@ namespace Assets
     public static class TagHelper
     {
         public const string MOVED_TAG = "ObjectHasBeenMoved";
+        public const string ENEMY_TAG = "Enemy";
     }
 }

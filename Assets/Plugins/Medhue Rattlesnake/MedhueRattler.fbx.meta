@@ -1,0 +1,3137 @@
+fileFormatVersion: 2
+guid: 875c38af5810c3344927ffbbf0cfb0a0
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Fang1_L
+    100002: Fang1_R
+    100004: Fang2_L
+    100006: Fang2_R
+    100008: Fang3_L
+    100010: Fang3_R
+    100012: Head
+    100014: Jaw
+    100016: //RootNode
+    100018: Neck
+    100020: Snake
+    100022: Snake_Armature
+    100024: Snake_Controller
+    100026: Spine_001
+    100028: Spine_002
+    100030: Spine_003
+    100032: Spine_004
+    100034: Spine_005
+    100036: Spine_006
+    100038: Spine_007
+    100040: Spine_008
+    100042: Spine_009
+    100044: Spine_010
+    100046: Tail01
+    100048: Tail02
+    100050: Tail03
+    100052: Tail04
+    100054: Tail05
+    100056: Tail06
+    100058: Tail07
+    100060: Tail08
+    100062: Tail09
+    100064: Tail10
+    100066: Tail11
+    100068: Tail12
+    100070: Tail13
+    100072: Tail14
+    100074: Tail15
+    100076: Tail16
+    100078: Tongue1
+    100080: Tongue2
+    100082: Tongue3
+    100084: Tongue4
+    100086: Tongue5
+    100088: Tongue6
+    400000: Fang1_L
+    400002: Fang1_R
+    400004: Fang2_L
+    400006: Fang2_R
+    400008: Fang3_L
+    400010: Fang3_R
+    400012: Head
+    400014: Jaw
+    400016: //RootNode
+    400018: Neck
+    400020: Snake
+    400022: Snake_Armature
+    400024: Snake_Controller
+    400026: Spine_001
+    400028: Spine_002
+    400030: Spine_003
+    400032: Spine_004
+    400034: Spine_005
+    400036: Spine_006
+    400038: Spine_007
+    400040: Spine_008
+    400042: Spine_009
+    400044: Spine_010
+    400046: Tail01
+    400048: Tail02
+    400050: Tail03
+    400052: Tail04
+    400054: Tail05
+    400056: Tail06
+    400058: Tail07
+    400060: Tail08
+    400062: Tail09
+    400064: Tail10
+    400066: Tail11
+    400068: Tail12
+    400070: Tail13
+    400072: Tail14
+    400074: Tail15
+    400076: Tail16
+    400078: Tongue1
+    400080: Tongue2
+    400082: Tongue3
+    400084: Tongue4
+    400086: Tongue5
+    400088: Tongue6
+    4300000: Snake
+    7400000: Default
+    7400002: Rattler
+    7400004: Rattler_Coil_strike
+    7400006: Rattler_Fall_land
+    7400008: Rattler_hiss
+    7400010: Rattler_idle1
+    7400012: Rattler_idle2
+    7400014: Rattler_Jump
+    7400016: Rattler_running
+    7400018: Rattler_runturnL
+    7400020: Rattler_runturnR
+    7400022: Rattler_StrifeL
+    7400024: Rattler_StrifeR
+    7400026: Rattler_Strike1
+    7400028: Rattler_Strike2
+    7400030: Rattler_turnL
+    7400032: Rattler_turnR
+    7400034: Rattler_walk1
+    7400036: Rattler_walk2
+    7400038: Rattler_walk3
+    7400040: Rattler_walkturnL
+    7400042: Rattler_walkturnR
+    7400044: Run_PoseLib
+    7400046: Snake_PoseLib
+    7400048: Rattler_Coil_idle
+    9500000: //RootNode
+    13700000: Snake
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default
+      takeName: Default
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Snake
+        weight: 1
+      - path: Snake_Armature
+        weight: 1
+      - path: Snake_Armature/Snake_Controller
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L/Fang3_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R/Fang3_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5/Tongue6
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15/Tail16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rattler
+      takeName: Rattler
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Snake
+        weight: 1
+      - path: Snake_Armature
+        weight: 1
+      - path: Snake_Armature/Snake_Controller
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L/Fang3_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R/Fang3_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5/Tongue6
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15/Tail16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rattler_Coil_strike
+      takeName: Rattler_Coil_strike
+      firstFrame: 0
+      lastFrame: 49
+      wrapMode: 0
+      orientationOffsetY: 35
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Snake
+        weight: 1
+      - path: Snake_Armature
+        weight: 1
+      - path: Snake_Armature/Snake_Controller
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L/Fang3_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R/Fang3_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5/Tongue6
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15/Tail16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rattler_Fall_land
+      takeName: Rattler_Fall_land
+      firstFrame: 0
+      lastFrame: 21
+      wrapMode: 0
+      orientationOffsetY: -36
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Snake
+        weight: 1
+      - path: Snake_Armature
+        weight: 1
+      - path: Snake_Armature/Snake_Controller
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L/Fang3_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R/Fang3_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5/Tongue6
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15/Tail16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rattler_hiss
+      takeName: Rattler_hiss
+      firstFrame: 0
+      lastFrame: 54
+      wrapMode: 0
+      orientationOffsetY: -56.5
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Snake
+        weight: 1
+      - path: Snake_Armature
+        weight: 1
+      - path: Snake_Armature/Snake_Controller
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L/Fang3_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R/Fang3_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5/Tongue6
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15/Tail16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rattler_idle1
+      takeName: Rattler_idle1
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Snake
+        weight: 1
+      - path: Snake_Armature
+        weight: 1
+      - path: Snake_Armature/Snake_Controller
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L/Fang3_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R/Fang3_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5/Tongue6
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15/Tail16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rattler_idle2
+      takeName: Rattler_idle2
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: -56.5
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Snake
+        weight: 1
+      - path: Snake_Armature
+        weight: 1
+      - path: Snake_Armature/Snake_Controller
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L/Fang3_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R/Fang3_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5/Tongue6
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15/Tail16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rattler_Jump
+      takeName: Rattler_Jump
+      firstFrame: 0
+      lastFrame: 37
+      wrapMode: 0
+      orientationOffsetY: -40
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Snake
+        weight: 1
+      - path: Snake_Armature
+        weight: 1
+      - path: Snake_Armature/Snake_Controller
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L/Fang3_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R/Fang3_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5/Tongue6
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15/Tail16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rattler_running
+      takeName: Rattler_running
+      firstFrame: 0
+      lastFrame: 32
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Snake
+        weight: 1
+      - path: Snake_Armature
+        weight: 1
+      - path: Snake_Armature/Snake_Controller
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L/Fang3_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R/Fang3_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5/Tongue6
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15/Tail16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rattler_runturnL
+      takeName: Rattler_runturnL
+      firstFrame: 0
+      lastFrame: 32
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Snake
+        weight: 1
+      - path: Snake_Armature
+        weight: 1
+      - path: Snake_Armature/Snake_Controller
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L/Fang3_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R/Fang3_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5/Tongue6
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15/Tail16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rattler_runturnR
+      takeName: Rattler_runturnR
+      firstFrame: 0
+      lastFrame: 32
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Snake
+        weight: 1
+      - path: Snake_Armature
+        weight: 1
+      - path: Snake_Armature/Snake_Controller
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L/Fang3_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R/Fang3_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5/Tongue6
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15/Tail16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rattler_StrifeL
+      takeName: Rattler_StrifeL
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: -56.5
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Snake
+        weight: 1
+      - path: Snake_Armature
+        weight: 1
+      - path: Snake_Armature/Snake_Controller
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L/Fang3_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R/Fang3_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5/Tongue6
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15/Tail16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rattler_StrifeR
+      takeName: Rattler_StrifeR
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: -56.5
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Snake
+        weight: 1
+      - path: Snake_Armature
+        weight: 1
+      - path: Snake_Armature/Snake_Controller
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L/Fang3_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R/Fang3_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5/Tongue6
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15/Tail16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rattler_Strike1
+      takeName: Rattler_Strike1
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Snake
+        weight: 1
+      - path: Snake_Armature
+        weight: 1
+      - path: Snake_Armature/Snake_Controller
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L/Fang3_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R/Fang3_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5/Tongue6
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15/Tail16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rattler_Strike2
+      takeName: Rattler_Strike2
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: -56.5
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Snake
+        weight: 1
+      - path: Snake_Armature
+        weight: 1
+      - path: Snake_Armature/Snake_Controller
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L/Fang3_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R/Fang3_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5/Tongue6
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15/Tail16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rattler_turnL
+      takeName: Rattler_turnL
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: -40
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Snake
+        weight: 1
+      - path: Snake_Armature
+        weight: 1
+      - path: Snake_Armature/Snake_Controller
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L/Fang3_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R/Fang3_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5/Tongue6
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15/Tail16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rattler_turnR
+      takeName: Rattler_turnR
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: -40
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Snake
+        weight: 1
+      - path: Snake_Armature
+        weight: 1
+      - path: Snake_Armature/Snake_Controller
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L/Fang3_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R/Fang3_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5/Tongue6
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15/Tail16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rattler_walk1
+      takeName: Rattler_walk1
+      firstFrame: 0
+      lastFrame: 32
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Snake
+        weight: 1
+      - path: Snake_Armature
+        weight: 1
+      - path: Snake_Armature/Snake_Controller
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L/Fang3_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R/Fang3_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5/Tongue6
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15/Tail16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rattler_walk2
+      takeName: Rattler_walk2
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: -56.5
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Snake
+        weight: 1
+      - path: Snake_Armature
+        weight: 1
+      - path: Snake_Armature/Snake_Controller
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L/Fang3_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R/Fang3_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5/Tongue6
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15/Tail16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rattler_walk3
+      takeName: Rattler_walk3
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: -56.5
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Snake
+        weight: 1
+      - path: Snake_Armature
+        weight: 1
+      - path: Snake_Armature/Snake_Controller
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L/Fang3_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R/Fang3_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5/Tongue6
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15/Tail16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rattler_walkturnL
+      takeName: Rattler_walkturnL
+      firstFrame: 0
+      lastFrame: 32
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Snake
+        weight: 1
+      - path: Snake_Armature
+        weight: 1
+      - path: Snake_Armature/Snake_Controller
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L/Fang3_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R/Fang3_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5/Tongue6
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15/Tail16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rattler_walkturnR
+      takeName: Rattler_walkturnR
+      firstFrame: 0
+      lastFrame: 32
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Snake
+        weight: 1
+      - path: Snake_Armature
+        weight: 1
+      - path: Snake_Armature/Snake_Controller
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L/Fang3_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R/Fang3_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5/Tongue6
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15/Tail16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Run_PoseLib
+      takeName: Run_PoseLib
+      firstFrame: 0
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Snake
+        weight: 1
+      - path: Snake_Armature
+        weight: 1
+      - path: Snake_Armature/Snake_Controller
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L/Fang3_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R/Fang3_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5/Tongue6
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15/Tail16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Snake_PoseLib
+      takeName: Snake_PoseLib
+      firstFrame: 0
+      lastFrame: 13
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Snake
+        weight: 1
+      - path: Snake_Armature
+        weight: 1
+      - path: Snake_Armature/Snake_Controller
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L/Fang3_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R/Fang3_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5/Tongue6
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15/Tail16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rattler_Coil_idle
+      takeName: Rattler_Coil_strike
+      firstFrame: 0
+      lastFrame: 26
+      wrapMode: 0
+      orientationOffsetY: 35
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Snake
+        weight: 1
+      - path: Snake_Armature
+        weight: 1
+      - path: Snake_Armature/Snake_Controller
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_L/Fang2_L/Fang3_L
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Fang1_R/Fang2_R/Fang3_R
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Spine_001/Spine_002/Spine_003/Spine_004/Spine_005/Spine_006/Spine_007/Spine_008/Spine_009/Spine_010/Neck/Head/Jaw/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5/Tongue6
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15
+        weight: 1
+      - path: Snake_Armature/Snake_Controller/Tail01/Tail02/Tail03/Tail04/Tail05/Tail06/Tail07/Tail08/Tail09/Tail10/Tail11/Tail12/Tail13/Tail14/Tail15/Tail16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 5
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: Snake_Controller
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
