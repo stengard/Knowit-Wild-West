@@ -51,10 +51,12 @@ public class ObjectSpawner : MonoBehaviour
 
     void SpawnObject()
     {
+        if(_spawnedGameObject && !_spawnedGameObject.CompareTag(TagHelper.MOVED_TAG)) Destroy(_spawnedGameObject);
+
         var spawnerSize = transform.GetComponent<Collider>().bounds.size.y;
         double offset = (double)spawnerSize/2 + (double)SpawnOffset;
         Vector3 spawnPosition = new Vector3(transform.position.x, transform.position.y + (float)offset, transform.position.z);
-        RemoveNonMovedChildren();
+        //RemoveNonMovedChildren();
 
         _spawnedGameObject = (GameObject)Instantiate(ObjectsToSpawn[Random.Range(0, ObjectsToSpawn.Count)], spawnPosition, transform.rotation);
 

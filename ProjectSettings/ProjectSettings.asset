@@ -352,7 +352,16 @@ PlayerSettings:
   metroCertificateIssuer: Knowit
   metroCertificateNotAfter: 00004eeba749d301
   metroApplicationDescription: Knowit Wild West
-  wsaImages: {}
+  wsaImages:
+    2031632: Assets/Textures/Icons/app_icon_16x16.png
+    2031640: Assets/Textures/Icons/app_icon_24x24.png
+    2031664: Assets/Textures/Icons/app_icon_48x48.png
+    2031716: Assets/Textures/Icons/app_icon_44x44.png
+    2031741: Assets/Textures/Icons/app_icon_55x55.png
+    2031766: Assets/Textures/Icons/app_icon_66x66.png
+    2031816: Assets/Textures/Icons/app_icon_88x88.png
+    2031872: Assets/Textures/Icons/app_icon_256x256.png
+    2032016: Assets/Textures/Icons/app_icon_176x176.png
   metroTileShortName: Knowit Wild West
   metroCommandLineArgsFile: 
   metroTileShowName: 0
@@ -361,7 +370,7 @@ PlayerSettings:
   metroWideTileShowName: 0
   metroDefaultTileSize: 1
   metroTileForegroundText: 1
-  metroTileBackgroundColor: {r: 0.13333334, g: 0.17254902, b: 0.21568628, a: 0}
+  metroTileBackgroundColor: {r: 0, g: 0.5882353, b: 0.50980395, a: 1}
   metroSplashScreenBackgroundColor: {r: 0.12941177, g: 0.17254902, b: 0.21568628,
     a: 1}
   metroSplashScreenUseBackgroundColor: 0

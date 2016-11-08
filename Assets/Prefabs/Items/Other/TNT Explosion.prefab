@@ -1158,7 +1158,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 36895597d859f3e43b9f4df1162f61c9, type: 3}
   - {fileID: 8300000, guid: a35f27e7b05101a4cbb8e2e60d99b88b, type: 3}
   TimerTickBeepSound: {fileID: 8300000, guid: de0f9145ddf37d74597c06c196965e9d, type: 3}
-  EnemyHitSound: {fileID: 8300000, guid: 387d9224485284d469ef1067501364d0, type: 3}
   ExplodeOnGaze: 0
   ExplodeOnTap: 1
   ExplodeOnKeyword: 1
@@ -1171,7 +1170,7 @@ MonoBehaviour:
   - {fileID: 180232, guid: cadd483f8f5216e47b2ccbc270f9e1ec, type: 2}
   NumberOfDebris: 10
   SecondsToExplode: 1
-  ExplosionRadius: 100
+  ExplosionRadius: 2
   ExplosionForceNewton: 1000
   DebrisSpawnRadius: 0.3
 --- !u!114 &114000014008358802

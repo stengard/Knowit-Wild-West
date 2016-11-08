@@ -17,7 +17,6 @@ namespace Assets.Scripts.GenericScripts
         public GameObject Explotion;
         public List<AudioClip> ExplosionSounds;
         public AudioClip TimerTickBeepSound;
-        public AudioClip EnemyHitSound;
 
         public bool ExplodeOnGaze = false;
         public bool ExplodeOnTap = false;
@@ -133,7 +132,6 @@ namespace Assets.Scripts.GenericScripts
         private void MakeDebrisFly()
         {
             //Spawn Debris
-
             for (int i = 0; i < NumberOfDebris; i++)
             {
                 Vector3 position = new Vector3(Random.Range(-DebrisSpawnRadius, DebrisSpawnRadius), Random.Range(0, DebrisSpawnRadius*2), Random.Range(-DebrisSpawnRadius, DebrisSpawnRadius));
@@ -153,32 +151,11 @@ namespace Assets.Scripts.GenericScripts
                     rb.AddExplosionForce(ExplosionForceNewton, gameObject.transform.position, ExplosionRadius, 2.0F);
                 }
 
-                if (c.tag == TagHelper.ENEMY_TAG)
+                if (c.gameObject.GetComponent<Killable>() != null)
                 {
-                    StartCoroutine(KillEnemyAndPlaySound(c.gameObject));
+                    StartCoroutine(c.gameObject.GetComponent<Killable>().KillEnemyAndPlaySound(c.gameObject));
                 }
             }
-        }
-
-
-        private IEnumerator KillEnemyAndPlaySound(GameObject enemyGameObject)
-        {
-            if (enemyGameObject.gameObject.GetComponent<AudioSource>() == null)
-            {
-                enemyGameObject.gameObject.AddComponent<AudioSource>();
-            }
-            AudioSource objectAudioSource = enemyGameObject.gameObject.GetComponent<AudioSource>();
-            float delay = 0.04f;
-            objectAudioSource.spatialize = true;
-            objectAudioSource.clip = EnemyHitSound;
-            objectAudioSource.PlayDelayed(delay);
-            foreach (var childRenderer in enemyGameObject.GetComponentsInChildren<Renderer>())
-            {
-                childRenderer.enabled = false;
-            }
-            yield return new WaitForSeconds(objectAudioSource.clip.length + delay);
-            Destroy(enemyGameObject);
-
         }
 
         private IEnumerator WaitAndBleep()
