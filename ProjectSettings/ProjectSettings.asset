@@ -353,6 +353,11 @@ PlayerSettings:
   metroCertificateNotAfter: 00004eeba749d301
   metroApplicationDescription: Knowit Wild West
   wsaImages:
+    851984: Assets/Textures/Icons/app_icon_16x16.png
+    852016: Assets/Textures/Icons/app_icon_48x48.png
+    852048: Assets/Textures/Icons/app_icon_24x24.png
+    852224: Assets/Textures/Icons/app_icon_256x256.png
+    1376356: Assets/Textures/Icons/app_icon_44x44.png
     2031632: Assets/Textures/Icons/app_icon_16x16.png
     2031640: Assets/Textures/Icons/app_icon_24x24.png
     2031664: Assets/Textures/Icons/app_icon_48x48.png

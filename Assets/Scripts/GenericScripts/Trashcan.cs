@@ -65,6 +65,7 @@ public class Trashcan : MonoBehaviour
 
     private void SetRenderers(GameObject go, bool enable)
     {
+        if (!go) return;
         if (go.GetComponent<Renderer>())
         {
             go.GetComponent<Renderer>().enabled = enable;

@@ -1169,8 +1169,8 @@ MonoBehaviour:
   - {fileID: 100906, guid: 91e43e5afc808154b972e36534d9d946, type: 2}
   - {fileID: 180232, guid: cadd483f8f5216e47b2ccbc270f9e1ec, type: 2}
   NumberOfDebris: 10
-  SecondsToExplode: 1
-  ExplosionRadius: 2
+  SecondsToExplode: 10
+  ExplosionRadius: 5
   ExplosionForceNewton: 1000
   DebrisSpawnRadius: 0.3
 --- !u!114 &114000014008358802
