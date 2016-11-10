@@ -2164,6 +2164,7 @@ MonoBehaviour:
     type: 2}
   NotPlaceableShadowMaterial: {fileID: 2100000, guid: be900e0334177f044a578272c6b675e2,
     type: 2}
+  PlaceOffset: 0
   PlacementSurface: 1
   ChildrenToHide: []
 --- !u!114 &114000012008506476
@@ -2189,6 +2190,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyHitSound: {fileID: 8300000, guid: d1beb396bd1ef644bb21a24ae3f54c4c, type: 3}
+  SecondHitSound: {fileID: 0}
+  BloodSplash: {fileID: 1000013090088520, guid: 25a60452a27cd5c48a33648dddfd15d1,
+    type: 2}
 --- !u!137 &137000011548325910
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

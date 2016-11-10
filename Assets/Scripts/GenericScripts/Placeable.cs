@@ -42,6 +42,9 @@ public class Placeable : MonoBehaviour
     [Tooltip("The material used to render the placement shadow when placement it not allowed.")]
     public Material NotPlaceableShadowMaterial = null;
 
+    [Tooltip("Some objects seem to have the wrong extends. Use this to position objects further up")]
+    public float PlaceOffset = 0.0f;
+
     [Tooltip("The type of surface on which the object can be placed.")]
     public PlacementSurfaces PlacementSurface = PlacementSurfaces.Horizontal;
 
@@ -59,7 +62,7 @@ public class Placeable : MonoBehaviour
     private float lastDistance = 2.0f;
 
     // The distance away from the target surface that the object should hover prior while being placed.
-    private float hoverDistance = 0.15f;
+    private float hoverDistance = 0.3f;
 
     // Threshold (the closer to 0, the stricter the standard) used to determine if a surface is flat.
     private float distanceThreshold = 0.02f;
@@ -244,8 +247,10 @@ public class Placeable : MonoBehaviour
             facePoints[i] = gameObject.transform.TransformVector(facePoints[i]) + gameObject.transform.position;
         }
 
+
         // Cast a ray from the center of the box collider face to the surface.
         RaycastHit centerHit;
+
         if (!Physics.Raycast(facePoints[0],
                         raycastDirection,
                         out centerHit,
@@ -269,6 +274,7 @@ public class Placeable : MonoBehaviour
                                 out hitInfo,
                                 maximumPlacementDistance,
                                 SpatialMappingManager.Instance.LayerMask))
+
             {
                 // To be a valid placement location, each of the corners must have a similar
                 // enough distance to the surface as the center point
@@ -283,7 +289,6 @@ public class Placeable : MonoBehaviour
                 return false;
             }
         }
-
         return true;
     }
 
@@ -392,7 +397,7 @@ public class Placeable : MonoBehaviour
 
         // The object is allowed to be placed.
         // We are placing at a small buffer away from the surface.
-        targetPosition = position + (0.01f * surfaceNormal);
+        targetPosition = position + ((0.01f + PlaceOffset) * surfaceNormal);
 
 
 
@@ -450,7 +455,6 @@ public class Placeable : MonoBehaviour
             {
                 offsetDistance = 0f;
             }
-
             moveTo = hitInfo.point + (offsetDistance * hitInfo.normal);
 
             lastDistance = hitInfo.distance;

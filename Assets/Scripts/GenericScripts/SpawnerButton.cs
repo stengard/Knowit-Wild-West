@@ -27,6 +27,7 @@ public class SpawnerButton : MonoBehaviour
 	    
         _spawnerButton = gameObject.GetComponent<Button>();
         _spawnedQuickShowGameObject = (GameObject)Instantiate(ObjectToSpawn, QuickShowGameObject.transform.position + QuickShowGameObject.transform.up * 0.15f, QuickShowGameObject.transform.rotation);
+
         _originalSize = ObjectToSpawn.transform.localScale;
         SetSize(_spawnedQuickShowGameObject);
         _spawnedQuickShowGameObject.transform.parent = QuickShowGameObject.transform;
@@ -69,8 +70,12 @@ public class SpawnerButton : MonoBehaviour
         
         Vector3 spawnPosition = new Vector3(transform.position.x, transform.position.y + 0.15f, transform.position.z + -0.2f);
 
-        if (SpawnLocation) spawnPosition = SpawnLocation.transform.position + SpawnLocation.transform.up*0.15f;
+        
 
+        if (SpawnLocation != null) spawnPosition = SpawnLocation.transform.position + SpawnLocation.transform.up*0.15f;
+
+        Debug.Log(SpawnLocation.transform.position);
+        Debug.Log(spawnPosition);
         _spawnedGameObject = (GameObject)Instantiate(ObjectToSpawn, spawnPosition, transform.rotation);
         SetSize(_spawnedGameObject);
         _spawnedGameObject.transform.parent = Parent.transform;

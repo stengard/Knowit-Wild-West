@@ -10,7 +10,7 @@ public class Killable : MonoBehaviour
     public GameObject BloodSplash;
     // Use this for initialization
     void Start () {
-	
+	    if(BloodSplash == null) Debug.Log("You need some kind of blood effect attached to the game object");
 	}
 	
 	// Update is called once per frame

@@ -30,10 +30,11 @@ public class Trashcan : MonoBehaviour
 	void Update ()
 	{
 
-        if (_objecInTrashcan && GestureManager.Instance.FocusedObject && !IsCurrentFocusedObjectThis())
+        if (_objecInTrashcan && GestureManager.Instance.FocusedObject && IsCurrentFocusedObjectDeletable())
         {
             if (!GestureManager.Instance.hasHoldStarted)
             {
+                Debug.Log("Deleting " + GestureManager.Instance.FocusedObject.name);
                 Destroy(GestureManager.Instance.FocusedObject);
                 _objecInTrashcan = false;
                 ResetLid();
@@ -46,21 +47,25 @@ public class Trashcan : MonoBehaviour
 
     void OnTriggerExit(Collider collider)
     {
-        if (collider.gameObject.tag == TagHelper.CURSOR_TAG || IsCurrentFocusedObjectThis()) return;
+        if (collider.gameObject.tag == TagHelper.CURSOR_TAG || !IsCurrentFocusedObjectDeletable()) return;
         SetRenderers(GestureManager.Instance.FocusedObject, true);
         gameObject.GetComponent<AudioSource>().PlayOneShot(CloseLidSound);
         ResetLid();
         _objecInTrashcan = false;
     }
 
+    void OnTriggerStay(Collider collider)
+    {
+        if (collider.gameObject.tag == TagHelper.CURSOR_TAG || !IsCurrentFocusedObjectDeletable()) return;
+        _objecInTrashcan = true;
+    }
+
     void OnTriggerEnter(Collider collider)
     {
-
-        if (collider.gameObject.tag == TagHelper.CURSOR_TAG || IsCurrentFocusedObjectThis()) return;
+        if (collider.gameObject.tag == TagHelper.CURSOR_TAG || !IsCurrentFocusedObjectDeletable()) return;
         gameObject.GetComponent<AudioSource>().PlayOneShot(OpenLidSound);
         StartCoroutine(RemoveLid());
         SetRenderers(GestureManager.Instance.FocusedObject, false);
-        _objecInTrashcan = true;
     }
 
     private void SetRenderers(GameObject go, bool enable)
@@ -80,9 +85,11 @@ public class Trashcan : MonoBehaviour
         
     }
 
-    private bool IsCurrentFocusedObjectThis()
+    private bool IsCurrentFocusedObjectDeletable()
     {
-        return GestureManager.Instance.FocusedObject == gameObject;
+        //If current focused object is a SpawnerButton or null, or is the trashcan itself it shouldn't be deleted;
+        if (GestureManager.Instance.FocusedObject == null) return false;
+        return !(GestureManager.Instance.FocusedObject.GetComponent<SpawnerButton>() || GestureManager.Instance.FocusedObject == gameObject);
     }
 
     IEnumerator RemoveLid()
