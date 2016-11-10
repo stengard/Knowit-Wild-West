@@ -8,14 +8,15 @@ namespace HoloToolkit.Unity
     public class ObjectSurfaceObserver : SpatialMappingSource
     {
         [Tooltip("The room model to use when loading meshes in Unity.")]
-        public GameObject roomModel;
+        public GameObject _roomModel;
+        public GameObject FloorModel;
 
         // Use this for initialization.
         private void Start()
         {
 #if UNITY_EDITOR
             // When in the Unity editor, try loading saved meshes from a model.
-            Load(roomModel);
+            Load(_roomModel);
 
             if (GetMeshFilters().Count > 0)
             {
@@ -66,6 +67,11 @@ namespace HoloToolkit.Unity
                     collider.sharedMesh = null;
                     collider.sharedMesh = surface.GetComponent<MeshFilter>().sharedMesh;
                 }
+
+                //GameObject.Find("HigherButton").GetComponent<FloorPlaneFix>().Go();
+                //GameObject.Find("LowerButton").GetComponent<FloorPlaneFix>().Go();
+                //GameObject.Find("ToggleMaterialButton").GetComponent<FloorPlaneFix>().Go();
+
             }
             catch
             {

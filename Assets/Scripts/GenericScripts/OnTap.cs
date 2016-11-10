@@ -8,7 +8,7 @@ public class OnTap : MonoBehaviour
     public bool HideOnTap = true;
     public bool RemoveOnTap = true;
 
-    void OnSelect()
+    void OnSelected()
     {
         if (HideOnTap)
         {

@@ -64,7 +64,7 @@ namespace HoloToolkit.Unity
         }
 
         // Called by GazeGestureManager when the user performs a tap gesture.
-        public void OnSelect()
+        public void OnSelected()
         {
             // On each tap gesture, toggle whether the user is in placing mode.
             placing = !placing;

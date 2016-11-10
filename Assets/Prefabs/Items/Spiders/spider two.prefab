@@ -1085,6 +1085,7 @@ GameObject:
   - 114: {fileID: 114000013188659232}
   - 65: {fileID: 65000012432383086}
   - 114: {fileID: 114000011131253174}
+  - 114: {fileID: 114000011738291400}
   m_Layer: 0
   m_Name: spider two
   m_TagString: Untagged
@@ -5869,8 +5870,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc7deb44062738448a826d2b0b669024, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpinOnStart: 1
+  SpinOnStart: 0
   RotationSpeed: 200
+--- !u!114 &114000011738291400
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012872371082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 722d1c87ba6a0c942ae28cea2532851a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyHitSound: {fileID: 8300000, guid: d577ed98a9e23f248bfff2e9e3db35fd, type: 3}
+  SecondHitSound: {fileID: 0}
+  BloodSplash: {fileID: 1000010604657078, guid: 6bb4ecc15645deb408f345d9a9a8593b,
+    type: 2}
 --- !u!114 &114000013188659232
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5890,6 +5906,7 @@ MonoBehaviour:
     type: 2}
   NotPlaceableShadowMaterial: {fileID: 2100000, guid: be900e0334177f044a578272c6b675e2,
     type: 2}
+  PlaceOffset: 0
   PlacementSurface: 1
   ChildrenToHide: []
 --- !u!137 &137000010203205408

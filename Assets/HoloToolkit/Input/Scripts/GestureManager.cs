@@ -1,9 +1,11 @@
 ﻿// Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License. See LICENSE in the project root for license information.
 
+using System;
 using UnityEngine;
 using UnityEngine.VR.WSA.Input;
 using System.Collections.Generic;
+using System.Reflection;
 
 namespace HoloToolkit.Unity
 {
@@ -93,7 +95,7 @@ namespace HoloToolkit.Unity
         private GestureRecognizer manipulationRecognizer;
 
         private bool hasRecognitionStarted = false;
-        private bool hasHoldStarted = false;
+        public bool hasHoldStarted = false;
 
         private bool HandPressed { get { return pressedHands.Count > 0; } }
         private HashSet<uint> pressedHands = new HashSet<uint>();
@@ -211,7 +213,8 @@ namespace HoloToolkit.Unity
 
             if (FocusedObject != null)
             {
-                FocusedObject.SendMessage("OnSelect", SendMessageOptions.DontRequireReceiver);
+                FocusedObject.SendMessage("OnSelected", SendMessageOptions.DontRequireReceiver);
+
             }
         }
 

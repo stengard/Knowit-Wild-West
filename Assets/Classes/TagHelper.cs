@@ -11,5 +11,6 @@ namespace Assets
     {
         public const string MOVED_TAG = "ObjectHasBeenMoved";
         public const string ENEMY_TAG = "Enemy";
+        public const string CURSOR_TAG = "Cursor";
     }
 }

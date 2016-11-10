@@ -7,7 +7,7 @@ namespace Assets.Scripts.GenericScripts
 
         private bool _isMoving;
         // Called by GazeGestureManager when the user performs a Select gesture
-        void OnSelect()
+        void OnSelected()
         {
             _isMoving = !_isMoving;
             // If the sphere has no Rigidbody component, add one to enable physics.

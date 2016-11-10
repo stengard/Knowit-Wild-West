@@ -20,7 +20,7 @@ public class SnakeScript : MonoBehaviour
         _audioSource = GetComponent<AudioSource>();
     }
 
-    void OnSelect()
+    void OnSelected()
     {
         _animator.SetTrigger("Attack");
         //_animator.CrossFade("Idle");

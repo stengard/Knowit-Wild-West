@@ -232,6 +232,9 @@ namespace HoloToolkit.Unity
             {
                 GameObject existingSurface = availableSurfaces.Dequeue();
                 existingSurface.SetActive(true);
+
+   
+
                 existingSurface.name = string.Format("Surface-{0}", surfaceID);
 
                 UpdateSurfaceObject(existingSurface, surfaceID);
