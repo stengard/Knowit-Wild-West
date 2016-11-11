@@ -1,6 +1,8 @@
 # Knowit Wild West
 
-This demo was made for HoloLense using Unity and [HoloToolkit-Unity](https://github.com/Microsoft/HoloToolkit-Unity "HoloToolkit-Unity"). It is a demo using spatial mapping to place objects in the world, spatial audio and hand gestures and voice commands to interact with the objects. The theme is
+This demo was made for HoloLens using Unity and [HoloToolkit-Unity](https://github.com/Microsoft/HoloToolkit-Unity "HoloToolkit-Unity"). It is a demo using spatial mapping to place objects in the world, spatial audio and hand gestures and voice commands to interact with the objects.
+
+The application was made for a exhibition to show of HoloLens and some of it's capabilities. The was 'Wild West', hence the cowboys and rattle snakes. The app was mad quite simple so people would be able to interact with it quickly.
 
 ## Getting Started
 First, download the repo.
@@ -10,16 +12,16 @@ git clone https://github.com/stengard/Knowit-Wild-West.git
 ```
 ### Prerequisites
 
-1. [HoloLense](https://www.microsoft.com/microsoft-hololens/en-us "HoloLense") or [HoloLense Emulator](https://developer.microsoft.com/sv-se/windows/holographic/install_the_tools "HoloLense Emulator")
-2. [Unity HoloLense Technical Preview](https://unity3d.com/partners/microsoft/hololens "Unity HoloLense Technical Preview")
+1. [HoloLens](https://www.microsoft.com/microsoft-hololens/en-us "HoloLense") or [HoloLens Emulator](https://developer.microsoft.com/sv-se/windows/holographic/install_the_tools "HoloLense Emulator")
+2. [Unity HoloLens Technical Preview](https://unity3d.com/partners/microsoft/hololens "Unity HoloLense Technical Preview")
 3. Visual Studio 2015
 
 ### Installing
 
-1. If you're using a HoloLense. Skip this step. Otherwise, install the Emulator.
-2. install Unity HoloLense Technical Preview.
+1. If you're using a HoloLens. Skip this step. Otherwise, install the Emulator.
+2. install Unity HoloLens Technical Preview.
 
-Open the project in Unity. You can use unity's Game mode or export to Visual Studio and build to the HoloLense or HoloLense Emulator.
+Open the project in Unity. You can use unity's Game mode or export to Visual Studio and build to the HoloLens or HoloLens Emulator.
 
 #### Export the project from Unity to Visual Studio
 
@@ -96,7 +98,7 @@ In the menu, a trashcan can be spawned under category 2. Place it anywhere on th
 TNT's can be blown up by looking at one and simply saying "Blow up".
 
 ## Built With
-* [Unity HoloLense Technical Preview](https://unity3d.com/partners/microsoft/hololens "Unity HoloLense Technical Preview")
+* [Unity HoloLens Technical Preview](https://unity3d.com/partners/microsoft/hololens "Unity HoloLense Technical Preview")
 * [HoloToolkit-Unity](https://github.com/Microsoft/HoloToolkit-Unity "HoloToolkit-Unity")
 
 
