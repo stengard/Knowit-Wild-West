@@ -181,7 +181,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 0}
+      m_Icon: {fileID: 2800000, guid: b4eb0d86b95bdf74d914a09dc72b1e6b, type: 3}
       m_Width: 128
       m_Height: 128
   m_BuildTargetBatching: []
@@ -345,7 +345,7 @@ PlayerSettings:
   spritePackerPolicy: 
   scriptingDefineSymbols: {}
   metroPackageName: KnowitWildWest
-  metroPackageVersion: 0.1.0.0
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
   metroCertificateSubject: Knowit
@@ -353,6 +353,9 @@ PlayerSettings:
   metroCertificateNotAfter: 00004eeba749d301
   metroApplicationDescription: Knowit Wild West
   wsaImages:
+    65636: Assets/Textures/Icons/app_icon_50x50.png
+    65736: Assets/Textures/Icons/app_icon_100x100.png
+    65936: Assets/Textures/Icons/app_icon_200x200.png
     720996: Assets/Textures/Icons/app_icon_150x150.png
     851984: Assets/Textures/Icons/app_icon_16x16.png
     852000: Assets/Textures/Icons/app_icon_32x32.png
@@ -373,10 +376,17 @@ PlayerSettings:
     2031816: Assets/Textures/Icons/app_icon_88x88.png
     2031872: Assets/Textures/Icons/app_icon_256x256.png
     2032016: Assets/Textures/Icons/app_icon_176x176.png
+    2162788: Assets/Textures/Icons/app_icon_150x150.png
+    2162813: Assets/Textures/Icons/app_icon_188x188.png
+    2162838: Assets/Textures/Icons/app_icon_225x255.png
+    2162888: Assets/Textures/Icons/app_icon_300x300.png
+    2163088: Assets/Textures/Icons/app_icon_600x600.png
+    2228324: Assets/Textures/Icons/app_icon_310x310.png
+    2293860: Assets/Textures/Icons/app_icon_310x150.png
   metroTileShortName: Knowit Wild West
   metroCommandLineArgsFile: 
   metroTileShowName: 0
-  metroMediumTileShowName: 0
+  metroMediumTileShowName: 1
   metroLargeTileShowName: 1
   metroWideTileShowName: 1
   metroDefaultTileSize: 1
