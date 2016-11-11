@@ -1,9 +1,10 @@
 # Knowit Wild West
 
-This demo was made for HoloLense using Unity and [HoloToolkit-Unity](https://github.com/Microsoft/HoloToolkit-Unity "HoloToolkit-Unity"). It is a demo using spatial mapping to place objects in the world, spatial audio and hand gestures and voice commands to interact with the objects.
+This demo was made for HoloLense using Unity and [HoloToolkit-Unity](https://github.com/Microsoft/HoloToolkit-Unity "HoloToolkit-Unity"). It is a demo using spatial mapping to place objects in the world, spatial audio and hand gestures and voice commands to interact with the objects. The theme is
 
 ## Getting Started
-First, clone the repo.
+First, download the repo.
+
 ```
 git clone https://github.com/stengard/Knowit-Wild-West.git
 ```
@@ -15,7 +16,7 @@ git clone https://github.com/stengard/Knowit-Wild-West.git
 
 ### Installing
 
-1. If you're using a HoloLense, install the drivers etc. Otherwise install the Emulator.
+1. If you're using a HoloLense. Skip this step. Otherwise, install the Emulator.
 2. install Unity HoloLense Technical Preview.
 
 Open the project in Unity. You can use unitys Game mode or export to Visual Studio and build to the HoloLense or HoloLense Emulator.
@@ -52,28 +53,45 @@ Following information states which gestures are available and what can be done i
 
 ### Gestures
 
-#### Action
+#### Menu
+The menu can be toggled on and off by tapping on the hat. The hat can be moved around and be placed on walls - the menu will
+follow it around.
 
+##### Spawn objects
+You can select different categories (currently 1,2 and actors) from the menu. The object will be spawned on the location of the
+brown "stone". The stone can be placed anywhere on the floor to change the spawn location.
+
+```
+Example: Tap TNT box button in the menu to spawn a TNT Box.
+```
+
+#### Action
 The initialize an action on an object the tap gesture is used.
 
 ```
-Example: To set the timer on the TNT. First look at it and then make the tap gesture with your fingers.
+Example: To blow up a the TNT. First look at it and then make the tap gesture with your fingers.
 ```
 
 #### Move Objects
-
 To move an object the hold gesture is used.
 ```
-Example: To move the radio to another place, first look at it and then make the tap and hold gesture with your fingers. Then you can move it around with your gaze; where you look is where the object is placed.
+Example: To move the radio to another place, first look at it and then make the tap and hold gesture with your fingers.
+Then you can move it around with your gaze; where you look is where the object is placed. A greenish box around the
+object will appear when it's being moved. The green color indicats that there is enough room for the object to be
+placed there. If the color of the box is red it's not possible to place it in the current location. IF The hold
+gesture is released during an invalid placement, the object will go back to its' previous position.
 ```
+##### Remove objects
+In the menu, a trashcan can be spawned under category 2. Place it anywhere on the floor and then move any object to it by using the hold gesture. Release the hold gesture when the object is in the trashcan (not visible) to delete it from the scene.
 
 ### Voice Commands
-
+TNT's can be blown up by looking at one and simply saying "Blow up".
 
 
 ## Built With
-
+* [Unity HoloLense Technical Preview](https://unity3d.com/partners/microsoft/hololens "Unity HoloLense Technical Preview")
 * [HoloToolkit-Unity](https://github.com/Microsoft/HoloToolkit-Unity "HoloToolkit-Unity")
+
 
 ## Authors
 
@@ -82,7 +100,3 @@ Example: To move the radio to another place, first look at it and then make the 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used and to everyone who helped.
