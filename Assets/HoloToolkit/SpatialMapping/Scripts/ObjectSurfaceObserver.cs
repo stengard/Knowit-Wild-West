@@ -67,11 +67,6 @@ namespace HoloToolkit.Unity
                     collider.sharedMesh = null;
                     collider.sharedMesh = surface.GetComponent<MeshFilter>().sharedMesh;
                 }
-
-                //GameObject.Find("HigherButton").GetComponent<FloorPlaneFix>().Go();
-                //GameObject.Find("LowerButton").GetComponent<FloorPlaneFix>().Go();
-                //GameObject.Find("ToggleMaterialButton").GetComponent<FloorPlaneFix>().Go();
-
             }
             catch
             {

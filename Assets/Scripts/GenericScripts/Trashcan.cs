@@ -6,8 +6,6 @@ using HoloToolkit.Unity;
 [RequireComponent(typeof(AudioSource))]
 public class Trashcan : MonoBehaviour
 {
-
-
     public GameObject Lid;
     public AudioClip OpenLidSound;
     public AudioClip CloseLidSound;
@@ -24,13 +22,14 @@ public class Trashcan : MonoBehaviour
     void Start ()
     {
         _originalLidLocalPosition = Lid.transform.localPosition;
+        _objecInTrashcan = false;
     }
 	
 	// Update is called once per frame
 	void Update ()
 	{
 
-        if (_objecInTrashcan && GestureManager.Instance.FocusedObject && IsCurrentFocusedObjectDeletable())
+        if (_objecInTrashcan && IsCurrentFocusedObjectDeletable())
         {
             if (!GestureManager.Instance.hasHoldStarted)
             {
@@ -87,15 +86,21 @@ public class Trashcan : MonoBehaviour
 
     private bool IsCurrentFocusedObjectDeletable()
     {
-        //If current focused object is a SpawnerButton or null, or is the trashcan itself it shouldn't be deleted;
+        //If current focused object is a SpawnerButton or null, or is the trashcan itself it shouldn't be deleted; I know....
+        //Should have done an Deleteable script on every prefab instead maybe..
         if (GestureManager.Instance.FocusedObject == null) return false;
-        return !(GestureManager.Instance.FocusedObject.GetComponent<SpawnerButton>() || GestureManager.Instance.FocusedObject == gameObject);
+        else if (GestureManager.Instance.FocusedObject.name == "Placer for Spawner") return false;
+        else if (GestureManager.Instance.FocusedObject.GetComponent<LightGestureManager>() != null) return false;
+        else if (GestureManager.Instance.FocusedObject.GetComponent<CanvasRenderer>() != null) return false;
+        else if(GestureManager.Instance.FocusedObject.GetComponent<SpawnerButton>() != null) return false;
+        else if(GestureManager.Instance.FocusedObject == gameObject) return false;
+
+        return true;
     }
 
     IEnumerator RemoveLid()
     {
         Vector3 newPostition = Lid.transform.position + Lid.transform.up*0.3f;
-        Debug.Log(newPostition);
         yield return StartCoroutine(MoveObject.use.TranslateTo(Lid.transform, newPostition, 0.3f, MoveObject.MoveType.Time));
     }
 
