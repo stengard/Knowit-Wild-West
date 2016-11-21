@@ -106,6 +106,3 @@ TNT's can be blown up by looking at one and simply saying "Blow up".
 
 * **Martin Stengård** - *Coding, design, etc.*
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
